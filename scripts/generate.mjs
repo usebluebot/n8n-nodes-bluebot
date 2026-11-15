@@ -26,7 +26,8 @@ const SPELLINGS = {
     api: 'API',
     cli: 'CLI',
     mcp: 'MCP',
-    n8n: 'n8n',
+    // n8n's verification scanner holds every option label to title case and ignores an inline disable.
+    n8n: 'N8n',
     mac: 'Mac',
     sms: 'SMS',
     imessage: 'iMessage',
@@ -74,9 +75,7 @@ function optionsLiteral(options) {
         .map((option) => {
             const fields = [`name: ${JSON.stringify(option.name)}`, `value: ${JSON.stringify(option.value)}`];
             if (option.description) fields.push(`description: ${JSON.stringify(option.description)}`);
-            const line = `\t{ ${fields.join(', ')} },`;
-            // n8n writes its own name in lower case; the title-case rule would make it "N8n".
-            return /^[a-z]/.test(option.name) ? `\t// eslint-disable-next-line n8n-nodes-base/node-param-display-name-miscased\n${line}` : line;
+            return `\t{ ${fields.join(', ')} },`;
         })
         .join('\n');
 }

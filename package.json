@@ -1,6 +1,6 @@
 {
     "name": "n8n-nodes-bluebot",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "n8n nodes for BlueBot: send texts from your own number through the Messages app on your Mac, and start workflows when texts come in.",
     "keywords": [
         "n8n-community-node-package",
@@ -18,7 +18,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/usebluebot/n8n-nodes-bluebot.git"
+        "url": "git+https://github.com/usebluebot/n8n-nodes-bluebot.git"
     },
     "engines": {
         "node": ">=18.17"

@@ -67,8 +67,7 @@ export const MESSAGE_SOURCE_OPTIONS: INodePropertyOptions[] = [
 	{ name: "Mac", value: "mac" },
 	{ name: "Make", value: "make" },
 	{ name: "MCP", value: "mcp" },
-	// eslint-disable-next-line n8n-nodes-base/node-param-display-name-miscased
-	{ name: "n8n", value: "n8n" },
+	{ name: "N8n", value: "n8n" },
 	{ name: "Pipedream", value: "pipedream" },
 	{ name: "Sequence", value: "sequence" },
 	{ name: "Test", value: "test" },

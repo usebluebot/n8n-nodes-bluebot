@@ -1,0 +1,26 @@
+{
+	"node": "n8n-nodes-bluebot.blueBotTrigger",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": [
+		"Communication"
+	],
+	"alias": [
+		"iMessage",
+		"SMS",
+		"Text Message",
+		"Messages"
+	],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://usebluebot.com/docs/n8n#add-your-credentials"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://usebluebot.com/docs/n8n#the-bluebot-trigger-node"
+			}
+		]
+	}
+}

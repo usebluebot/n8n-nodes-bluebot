@@ -1,0 +1,3827 @@
+{
+	"apiVersion": "2026-11-13",
+	"operations": {
+		"listMessages": {
+			"method": "GET",
+			"path": "/messages",
+			"status": 200,
+			"request": null,
+			"response": {
+				"object": "list",
+				"data": [
+					{
+						"id": "msg_1Hq2LxW9cVbN3mKpRtYs0a",
+						"object": "message",
+						"direction": "out",
+						"state": "sent",
+						"to": "+15555550123",
+						"from": "+15555550100",
+						"chat_id": null,
+						"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+						"conversation_id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+						"text": "Hi Maria, the showing at 412 Oak St is confirmed for 3 PM.",
+						"text_deleted": false,
+						"files": [],
+						"service_requested": "auto",
+						"service": "imessage",
+						"sms_retry": false,
+						"source": "api",
+						"source_ref": null,
+						"metadata": {
+							"crm_id": "48213"
+						},
+						"hold": null,
+						"send_at": null,
+						"expires_at": "2026-11-14T19:41:00.000Z",
+						"failure": null,
+						"cancel_reason": null,
+						"resolution": null,
+						"resolved_at": null,
+						"resent_message_id": null,
+						"reply_to_id": null,
+						"reactions": [],
+						"edited_at": null,
+						"unsent_at": null,
+						"created_at": "2026-11-13T19:41:00.000Z",
+						"queued_at": "2026-11-13T19:41:00.000Z",
+						"sending_at": "2026-11-13T19:41:02.000Z",
+						"sent_at": "2026-11-13T19:41:05.000Z",
+						"delivered_at": null,
+						"read_at": null,
+						"failed_at": null,
+						"unconfirmed_at": null,
+						"expired_at": null,
+						"canceled_at": null,
+						"received_at": null
+					}
+				],
+				"has_more": false,
+				"next_cursor": null
+			}
+		},
+		"sendMessage": {
+			"method": "POST",
+			"path": "/messages",
+			"status": 201,
+			"request": {
+				"to": "+15555550123",
+				"text": "Hi Maria, the showing at 412 Oak St is confirmed for 3 PM.",
+				"metadata": {
+					"crm_id": "48213"
+				}
+			},
+			"response": {
+				"id": "msg_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "message",
+				"direction": "out",
+				"state": "queued",
+				"to": "+15555550123",
+				"from": "+15555550100",
+				"chat_id": null,
+				"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"conversation_id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+				"text": "Hi Maria, the showing at 412 Oak St is confirmed for 3 PM.",
+				"text_deleted": false,
+				"files": [],
+				"service_requested": "auto",
+				"service": null,
+				"sms_retry": false,
+				"source": "api",
+				"source_ref": null,
+				"metadata": {
+					"crm_id": "48213"
+				},
+				"hold": null,
+				"send_at": null,
+				"expires_at": "2026-11-14T19:41:00.000Z",
+				"failure": null,
+				"cancel_reason": null,
+				"resolution": null,
+				"resolved_at": null,
+				"resent_message_id": null,
+				"reply_to_id": null,
+				"reactions": [],
+				"edited_at": null,
+				"unsent_at": null,
+				"created_at": "2026-11-13T19:41:00.000Z",
+				"queued_at": "2026-11-13T19:41:00.000Z",
+				"sending_at": null,
+				"sent_at": null,
+				"delivered_at": null,
+				"read_at": null,
+				"failed_at": null,
+				"unconfirmed_at": null,
+				"expired_at": null,
+				"canceled_at": null,
+				"received_at": null
+			}
+		},
+		"getMessage": {
+			"method": "GET",
+			"path": "/messages/{id}",
+			"status": 200,
+			"request": null,
+			"response": {
+				"id": "msg_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "message",
+				"direction": "out",
+				"state": "sent",
+				"to": "+15555550123",
+				"from": "+15555550100",
+				"chat_id": null,
+				"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"conversation_id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+				"text": "Hi Maria, the showing at 412 Oak St is confirmed for 3 PM.",
+				"text_deleted": false,
+				"files": [],
+				"service_requested": "auto",
+				"service": "imessage",
+				"sms_retry": false,
+				"source": "api",
+				"source_ref": null,
+				"metadata": {
+					"crm_id": "48213"
+				},
+				"hold": null,
+				"send_at": null,
+				"expires_at": "2026-11-14T19:41:00.000Z",
+				"failure": null,
+				"cancel_reason": null,
+				"resolution": null,
+				"resolved_at": null,
+				"resent_message_id": null,
+				"reply_to_id": null,
+				"reactions": [],
+				"edited_at": null,
+				"unsent_at": null,
+				"created_at": "2026-11-13T19:41:00.000Z",
+				"queued_at": "2026-11-13T19:41:00.000Z",
+				"sending_at": "2026-11-13T19:41:02.000Z",
+				"sent_at": "2026-11-13T19:41:05.000Z",
+				"delivered_at": null,
+				"read_at": null,
+				"failed_at": null,
+				"unconfirmed_at": null,
+				"expired_at": null,
+				"canceled_at": null,
+				"received_at": null
+			}
+		},
+		"updateMessage": {
+			"method": "PATCH",
+			"path": "/messages/{id}",
+			"status": 200,
+			"request": {
+				"send_at": "2026-11-14T15:00:00.000Z"
+			},
+			"response": {
+				"id": "msg_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "message",
+				"direction": "out",
+				"state": "scheduled",
+				"to": "+15555550123",
+				"from": "+15555550100",
+				"chat_id": null,
+				"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"conversation_id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+				"text": "Hi Maria, the showing at 412 Oak St is confirmed for 3 PM.",
+				"text_deleted": false,
+				"files": [],
+				"service_requested": "auto",
+				"service": null,
+				"sms_retry": false,
+				"source": "api",
+				"source_ref": null,
+				"metadata": {
+					"crm_id": "48213"
+				},
+				"hold": null,
+				"send_at": "2026-11-14T15:00:00.000Z",
+				"expires_at": "2026-11-15T15:00:00.000Z",
+				"failure": null,
+				"cancel_reason": null,
+				"resolution": null,
+				"resolved_at": null,
+				"resent_message_id": null,
+				"reply_to_id": null,
+				"reactions": [],
+				"edited_at": null,
+				"unsent_at": null,
+				"created_at": "2026-11-13T19:41:00.000Z",
+				"queued_at": null,
+				"sending_at": null,
+				"sent_at": null,
+				"delivered_at": null,
+				"read_at": null,
+				"failed_at": null,
+				"unconfirmed_at": null,
+				"expired_at": null,
+				"canceled_at": null,
+				"received_at": null
+			}
+		},
+		"cancelMessage": {
+			"method": "POST",
+			"path": "/messages/{id}/cancel",
+			"status": 200,
+			"request": null,
+			"response": {
+				"id": "msg_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "message",
+				"direction": "out",
+				"state": "canceled",
+				"to": "+15555550123",
+				"from": "+15555550100",
+				"chat_id": null,
+				"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"conversation_id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+				"text": "Hi Maria, the showing at 412 Oak St is confirmed for 3 PM.",
+				"text_deleted": false,
+				"files": [],
+				"service_requested": "auto",
+				"service": null,
+				"sms_retry": false,
+				"source": "api",
+				"source_ref": null,
+				"metadata": {
+					"crm_id": "48213"
+				},
+				"hold": null,
+				"send_at": null,
+				"expires_at": "2026-11-14T19:41:00.000Z",
+				"failure": null,
+				"cancel_reason": "requested",
+				"resolution": null,
+				"resolved_at": null,
+				"resent_message_id": null,
+				"reply_to_id": null,
+				"reactions": [],
+				"edited_at": null,
+				"unsent_at": null,
+				"created_at": "2026-11-13T19:41:00.000Z",
+				"queued_at": "2026-11-13T19:41:00.000Z",
+				"sending_at": null,
+				"sent_at": null,
+				"delivered_at": null,
+				"read_at": null,
+				"failed_at": null,
+				"unconfirmed_at": null,
+				"expired_at": null,
+				"canceled_at": "2026-11-13T19:42:00.000Z",
+				"received_at": null
+			}
+		},
+		"resolveMessage": {
+			"method": "POST",
+			"path": "/messages/{id}/resolve",
+			"status": 200,
+			"request": {
+				"action": "send_again"
+			},
+			"response": {
+				"id": "msg_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "message",
+				"direction": "out",
+				"state": "unconfirmed",
+				"to": "+15555550123",
+				"from": "+15555550100",
+				"chat_id": null,
+				"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"conversation_id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+				"text": "Hi Maria, the showing at 412 Oak St is confirmed for 3 PM.",
+				"text_deleted": false,
+				"files": [],
+				"service_requested": "auto",
+				"service": null,
+				"sms_retry": false,
+				"source": "api",
+				"source_ref": null,
+				"metadata": {
+					"crm_id": "48213"
+				},
+				"hold": null,
+				"send_at": null,
+				"expires_at": "2026-11-14T19:41:00.000Z",
+				"failure": null,
+				"cancel_reason": null,
+				"resolution": "resent",
+				"resolved_at": "2026-11-13T19:50:00.000Z",
+				"resent_message_id": "msg_3Lp3VsC7hGqE5tZyKbWn2d",
+				"reply_to_id": null,
+				"reactions": [],
+				"edited_at": null,
+				"unsent_at": null,
+				"created_at": "2026-11-13T19:41:00.000Z",
+				"queued_at": "2026-11-13T19:41:00.000Z",
+				"sending_at": "2026-11-13T19:41:02.000Z",
+				"sent_at": null,
+				"delivered_at": null,
+				"read_at": null,
+				"failed_at": null,
+				"unconfirmed_at": "2026-11-13T19:44:02.000Z",
+				"expired_at": null,
+				"canceled_at": null,
+				"received_at": null
+			}
+		},
+		"uploadFile": {
+			"method": "POST",
+			"path": "/files",
+			"status": 201,
+			"request": null,
+			"response": {
+				"id": "file_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "file",
+				"name": "listing-412-oak.jpg",
+				"content_type": "image/jpeg",
+				"size": 482113,
+				"kind": "image",
+				"status": "ready",
+				"url": "https://usebluebot.com/files/f/2Bf8QzD4kJmA6nXwEuTr1c?sig=…",
+				"url_expires_at": "2026-11-13T20:41:00.000Z",
+				"transcript": null,
+				"transcript_language": null,
+				"created_at": "2026-11-13T19:40:00.000Z"
+			}
+		},
+		"getFile": {
+			"method": "GET",
+			"path": "/files/{id}",
+			"status": 200,
+			"request": null,
+			"response": {
+				"id": "file_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "file",
+				"name": "listing-412-oak.jpg",
+				"content_type": "image/jpeg",
+				"size": 482113,
+				"kind": "image",
+				"status": "ready",
+				"url": "https://usebluebot.com/files/f/2Bf8QzD4kJmA6nXwEuTr1c?sig=…",
+				"url_expires_at": "2026-11-13T20:41:00.000Z",
+				"transcript": null,
+				"transcript_language": null,
+				"created_at": "2026-11-13T19:40:00.000Z"
+			}
+		},
+		"listChats": {
+			"method": "GET",
+			"path": "/chats",
+			"status": 200,
+			"request": null,
+			"response": {
+				"object": "list",
+				"data": [
+					{
+						"id": "chat_1Hq2LxW9cVbN3mKpRtYs0a",
+						"object": "chat",
+						"name": "Oak St closing",
+						"is_group": true,
+						"participants": [
+							"+15555550123",
+							"+15555550187"
+						],
+						"service": "imessage",
+						"last_message_at": "2026-11-13T19:41:00.000Z",
+						"created_at": "2026-11-02T14:00:00.000Z"
+					}
+				],
+				"has_more": false,
+				"next_cursor": null
+			}
+		},
+		"getChat": {
+			"method": "GET",
+			"path": "/chats/{id}",
+			"status": 200,
+			"request": null,
+			"response": {
+				"id": "chat_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "chat",
+				"name": "Oak St closing",
+				"is_group": true,
+				"participants": [
+					"+15555550123",
+					"+15555550187"
+				],
+				"service": "imessage",
+				"last_message_at": "2026-11-13T19:41:00.000Z",
+				"created_at": "2026-11-02T14:00:00.000Z"
+			}
+		},
+		"lookupNumber": {
+			"method": "GET",
+			"path": "/lookup",
+			"status": 200,
+			"request": null,
+			"response": {
+				"object": "lookup",
+				"handle": "+15555550123",
+				"service": "imessage",
+				"basis": "history",
+				"last_seen_at": "2026-11-12T16:20:00.000Z",
+				"checked_at": "2026-11-13T19:41:00.000Z"
+			}
+		},
+		"getDevice": {
+			"method": "GET",
+			"path": "/device",
+			"status": 200,
+			"request": null,
+			"response": {
+				"id": "dev_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "device",
+				"status": "online",
+				"name": "Dana’s MacBook Air",
+				"number": "+15555550100",
+				"app_version": "1.0.0",
+				"macos_version": "15.1",
+				"last_seen_at": "2026-11-13T19:41:00.000Z",
+				"last_sync_at": "2026-11-13T19:41:00.000Z",
+				"offline_since": null,
+				"paired_at": "2026-11-01T15:00:00.000Z",
+				"checks": {
+					"messages": {
+						"state": "ok",
+						"detail": null
+					},
+					"full_disk_access": {
+						"state": "ok",
+						"detail": null
+					},
+					"forwarding": {
+						"state": "ok",
+						"detail": null
+					},
+					"awake": {
+						"state": "ok",
+						"detail": null
+					},
+					"filevault": {
+						"state": "ok",
+						"detail": null
+					}
+				},
+				"checks_ok": true,
+				"transcription": false,
+				"held_count": 0,
+				"queued_count": 0,
+				"unconfirmed_count": 0,
+				"paused_until": null,
+				"today": {
+					"sent": 14,
+					"new_people": 3,
+					"new_people_limit": 50,
+					"daily_limit": 1000,
+					"resets_at": "2026-11-14T05:00:00.000Z"
+				}
+			}
+		},
+		"getStatus": {
+			"method": "GET",
+			"path": "/status",
+			"status": 200,
+			"request": null,
+			"response": {
+				"object": "status",
+				"status": "ok",
+				"sending": "ok",
+				"database": "ok",
+				"api_version": "2026-11-13",
+				"checked_at": "2026-11-13T19:41:00.000Z"
+			}
+		},
+		"getMe": {
+			"method": "GET",
+			"path": "/me",
+			"status": 200,
+			"request": null,
+			"response": {
+				"object": "me",
+				"account": {
+					"id": "acct_1Hq2LxW9cVbN3mKpRtYs0a",
+					"email": "dana@example.com",
+					"name": "Dana Reyes",
+					"time_zone": "America/Chicago",
+					"created_at": "2026-11-01T15:00:00.000Z"
+				},
+				"key": {
+					"id": "key_1Hq2LxW9cVbN3mKpRtYs0a",
+					"name": "Zapier",
+					"prefix": "bb_live_7Hq2Lx",
+					"mode": "live",
+					"scopes": [
+						"messages:send",
+						"messages:read",
+						"contacts:write",
+						"contacts:read",
+						"webhooks:manage",
+						"account:read"
+					],
+					"created_at": "2026-11-01T15:10:00.000Z"
+				},
+				"plan": {
+					"status": "active",
+					"active": true,
+					"trial_end": null,
+					"current_period_end": "2026-12-01T15:00:00.000Z"
+				},
+				"device": {
+					"status": "online"
+				}
+			}
+		},
+		"getSettings": {
+			"method": "GET",
+			"path": "/settings",
+			"status": 200,
+			"request": null,
+			"response": {
+				"object": "settings",
+				"business_name": "Dana Realty",
+				"time_zone": "America/Chicago",
+				"pace_seconds": 20,
+				"new_people_per_day": 50,
+				"quiet_hours": {
+					"enabled": true,
+					"start": "21:00",
+					"end": "08:00"
+				},
+				"smart_quiet_hours": false,
+				"stop_words": {
+					"enabled": true,
+					"words": [
+						"stop",
+						"stopall",
+						"unsubscribe",
+						"cancel",
+						"end",
+						"quit"
+					],
+					"custom": false,
+					"start_words": [
+						"start",
+						"unstop",
+						"yes"
+					]
+				},
+				"expiry_hours": 24,
+				"inbound_mode": "replies",
+				"paused_until": null,
+				"platform_daily_limit": 1000,
+				"warnings": []
+			}
+		},
+		"updateSettings": {
+			"method": "PATCH",
+			"path": "/settings",
+			"status": 200,
+			"request": {
+				"pace_seconds": 30,
+				"quiet_hours": {
+					"start": "20:00"
+				}
+			},
+			"response": {
+				"object": "settings",
+				"business_name": "Dana Realty",
+				"time_zone": "America/Chicago",
+				"pace_seconds": 30,
+				"new_people_per_day": 50,
+				"quiet_hours": {
+					"enabled": true,
+					"start": "20:00",
+					"end": "08:00"
+				},
+				"smart_quiet_hours": false,
+				"stop_words": {
+					"enabled": true,
+					"words": [
+						"stop",
+						"stopall",
+						"unsubscribe",
+						"cancel",
+						"end",
+						"quit"
+					],
+					"custom": false,
+					"start_words": [
+						"start",
+						"unstop",
+						"yes"
+					]
+				},
+				"expiry_hours": 24,
+				"inbound_mode": "replies",
+				"paused_until": null,
+				"platform_daily_limit": 1000,
+				"warnings": []
+			}
+		},
+		"listStops": {
+			"method": "GET",
+			"path": "/stops",
+			"status": 200,
+			"request": null,
+			"response": {
+				"object": "list",
+				"data": [
+					{
+						"object": "stop",
+						"handle": "+15555550144",
+						"contact_id": "ct_4Mr6NdF1jHwS8aPxQcUv3e",
+						"stopped_at": "2026-11-10T22:05:00.000Z",
+						"source": "reply"
+					}
+				],
+				"has_more": false,
+				"next_cursor": null
+			}
+		},
+		"addStop": {
+			"method": "POST",
+			"path": "/stops",
+			"status": 201,
+			"request": {
+				"person": "+15555550144"
+			},
+			"response": {
+				"object": "stop",
+				"handle": "+15555550144",
+				"contact_id": "ct_4Mr6NdF1jHwS8aPxQcUv3e",
+				"stopped_at": "2026-11-13T19:41:00.000Z",
+				"source": "api"
+			}
+		},
+		"removeStop": {
+			"method": "DELETE",
+			"path": "/stops/{person}",
+			"status": 200,
+			"request": null,
+			"response": {
+				"object": "stop",
+				"handle": "+15555550144",
+				"deleted": true
+			}
+		},
+		"listEvents": {
+			"method": "GET",
+			"path": "/events",
+			"status": 200,
+			"request": null,
+			"response": {
+				"object": "list",
+				"data": [
+					{
+						"id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+						"object": "event",
+						"type": "message.received",
+						"api_version": "2026-11-13",
+						"timestamp": "2026-11-13T19:41:00.000Z",
+						"data": {
+							"id": "msg_2Bf8QzD4kJmA6nXwEuTr1c",
+							"object": "message",
+							"direction": "in",
+							"state": "received",
+							"to": "+15555550100",
+							"from": "+15555550123",
+							"chat_id": null,
+							"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+							"conversation_id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+							"text": "Perfect, see you there!",
+							"text_deleted": false,
+							"files": [],
+							"service_requested": "auto",
+							"service": "imessage",
+							"sms_retry": false,
+							"source": "mac",
+							"source_ref": null,
+							"metadata": {},
+							"hold": null,
+							"send_at": null,
+							"expires_at": null,
+							"failure": null,
+							"cancel_reason": null,
+							"resolution": null,
+							"resolved_at": null,
+							"resent_message_id": null,
+							"reply_to_id": null,
+							"reactions": [],
+							"edited_at": null,
+							"unsent_at": null,
+							"created_at": "2026-11-13T19:44:12.000Z",
+							"queued_at": null,
+							"sending_at": null,
+							"sent_at": null,
+							"delivered_at": null,
+							"read_at": null,
+							"failed_at": null,
+							"unconfirmed_at": null,
+							"expired_at": null,
+							"canceled_at": null,
+							"received_at": "2026-11-13T19:44:10.000Z"
+						}
+					}
+				],
+				"has_more": false,
+				"next_cursor": null
+			}
+		},
+		"getEvent": {
+			"method": "GET",
+			"path": "/events/{id}",
+			"status": 200,
+			"request": null,
+			"response": {
+				"id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "event",
+				"type": "message.received",
+				"api_version": "2026-11-13",
+				"timestamp": "2026-11-13T19:41:00.000Z",
+				"data": {
+					"id": "msg_2Bf8QzD4kJmA6nXwEuTr1c",
+					"object": "message",
+					"direction": "in",
+					"state": "received",
+					"to": "+15555550100",
+					"from": "+15555550123",
+					"chat_id": null,
+					"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+					"conversation_id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+					"text": "Perfect, see you there!",
+					"text_deleted": false,
+					"files": [],
+					"service_requested": "auto",
+					"service": "imessage",
+					"sms_retry": false,
+					"source": "mac",
+					"source_ref": null,
+					"metadata": {},
+					"hold": null,
+					"send_at": null,
+					"expires_at": null,
+					"failure": null,
+					"cancel_reason": null,
+					"resolution": null,
+					"resolved_at": null,
+					"resent_message_id": null,
+					"reply_to_id": null,
+					"reactions": [],
+					"edited_at": null,
+					"unsent_at": null,
+					"created_at": "2026-11-13T19:44:12.000Z",
+					"queued_at": null,
+					"sending_at": null,
+					"sent_at": null,
+					"delivered_at": null,
+					"read_at": null,
+					"failed_at": null,
+					"unconfirmed_at": null,
+					"expired_at": null,
+					"canceled_at": null,
+					"received_at": "2026-11-13T19:44:10.000Z"
+				}
+			}
+		},
+		"listWebhooks": {
+			"method": "GET",
+			"path": "/webhooks",
+			"status": 200,
+			"request": null,
+			"response": {
+				"object": "list",
+				"data": [
+					{
+						"id": "wh_1Hq2LxW9cVbN3mKpRtYs0a",
+						"object": "webhook",
+						"url": "https://hooks.zapier.com/hooks/standard/1234567/abcdef/",
+						"description": "New replies to my CRM",
+						"events": [
+							"message.received",
+							"message.failed"
+						],
+						"all_events": false,
+						"api_version": "2026-11-13",
+						"status": "active",
+						"paused_at": null,
+						"pause_reason": null,
+						"failing_since": null,
+						"last_success_at": "2026-11-13T19:44:13.000Z",
+						"last_failure_at": null,
+						"last_status": 200,
+						"previous_secret_expires_at": null,
+						"created_at": "2026-11-01T15:10:00.000Z"
+					}
+				],
+				"has_more": false,
+				"next_cursor": null
+			}
+		},
+		"createWebhook": {
+			"method": "POST",
+			"path": "/webhooks",
+			"status": 201,
+			"request": {
+				"url": "https://hooks.zapier.com/hooks/standard/1234567/abcdef/",
+				"events": [
+					"message.received",
+					"message.failed"
+				],
+				"description": "New replies to my CRM"
+			},
+			"response": {
+				"id": "wh_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "webhook",
+				"url": "https://hooks.zapier.com/hooks/standard/1234567/abcdef/",
+				"description": "New replies to my CRM",
+				"events": [
+					"message.received",
+					"message.failed"
+				],
+				"all_events": false,
+				"api_version": "2026-11-13",
+				"status": "active",
+				"paused_at": null,
+				"pause_reason": null,
+				"failing_since": null,
+				"last_success_at": null,
+				"last_failure_at": null,
+				"last_status": null,
+				"previous_secret_expires_at": null,
+				"created_at": "2026-11-01T15:10:00.000Z",
+				"secret": "whsec_MfKQ9r8GKYqrTwjUPD8ILPZIo2LaLaSw"
+			}
+		},
+		"getWebhook": {
+			"method": "GET",
+			"path": "/webhooks/{id}",
+			"status": 200,
+			"request": null,
+			"response": {
+				"id": "wh_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "webhook",
+				"url": "https://hooks.zapier.com/hooks/standard/1234567/abcdef/",
+				"description": "New replies to my CRM",
+				"events": [
+					"message.received",
+					"message.failed"
+				],
+				"all_events": false,
+				"api_version": "2026-11-13",
+				"status": "active",
+				"paused_at": null,
+				"pause_reason": null,
+				"failing_since": null,
+				"last_success_at": "2026-11-13T19:44:13.000Z",
+				"last_failure_at": null,
+				"last_status": 200,
+				"previous_secret_expires_at": null,
+				"created_at": "2026-11-01T15:10:00.000Z"
+			}
+		},
+		"updateWebhook": {
+			"method": "PATCH",
+			"path": "/webhooks/{id}",
+			"status": 200,
+			"request": {
+				"paused": true
+			},
+			"response": {
+				"id": "wh_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "webhook",
+				"url": "https://hooks.zapier.com/hooks/standard/1234567/abcdef/",
+				"description": "New replies to my CRM",
+				"events": [
+					"message.received",
+					"message.failed"
+				],
+				"all_events": false,
+				"api_version": "2026-11-13",
+				"status": "paused",
+				"paused_at": "2026-11-13T19:41:00.000Z",
+				"pause_reason": "customer",
+				"failing_since": null,
+				"last_success_at": "2026-11-13T19:44:13.000Z",
+				"last_failure_at": null,
+				"last_status": 200,
+				"previous_secret_expires_at": null,
+				"created_at": "2026-11-01T15:10:00.000Z"
+			}
+		},
+		"deleteWebhook": {
+			"method": "DELETE",
+			"path": "/webhooks/{id}",
+			"status": 200,
+			"request": null,
+			"response": {
+				"id": "wh_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "webhook",
+				"deleted": true
+			}
+		},
+		"testWebhook": {
+			"method": "POST",
+			"path": "/webhooks/{id}/test",
+			"status": 200,
+			"request": {
+				"type": "message.received"
+			},
+			"response": {
+				"id": "dlv_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "webhook_delivery",
+				"webhook_id": "wh_1Hq2LxW9cVbN3mKpRtYs0a",
+				"event_id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+				"event_type": "message.received",
+				"test": true,
+				"state": "delivered",
+				"attempts": 1,
+				"last_status": 200,
+				"last_error": null,
+				"last_duration_ms": 182,
+				"last_response_body": "{\"ok\":true}",
+				"next_attempt_at": null,
+				"delivered_at": "2026-11-13T19:44:13.000Z",
+				"replay_of": null,
+				"created_at": "2026-11-13T19:44:12.000Z"
+			}
+		},
+		"rotateWebhookSecret": {
+			"method": "POST",
+			"path": "/webhooks/{id}/rotate-secret",
+			"status": 200,
+			"request": null,
+			"response": {
+				"id": "wh_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "webhook",
+				"url": "https://hooks.zapier.com/hooks/standard/1234567/abcdef/",
+				"description": "New replies to my CRM",
+				"events": [
+					"message.received",
+					"message.failed"
+				],
+				"all_events": false,
+				"api_version": "2026-11-13",
+				"status": "active",
+				"paused_at": null,
+				"pause_reason": null,
+				"failing_since": null,
+				"last_success_at": "2026-11-13T19:44:13.000Z",
+				"last_failure_at": null,
+				"last_status": 200,
+				"previous_secret_expires_at": "2026-11-14T19:41:00.000Z",
+				"created_at": "2026-11-01T15:10:00.000Z",
+				"secret": "whsec_Zx1q4V8nT2mL6cR0bW9kHs3dPfA7yJuE"
+			}
+		},
+		"listDeliveries": {
+			"method": "GET",
+			"path": "/webhooks/{id}/deliveries",
+			"status": 200,
+			"request": null,
+			"response": {
+				"object": "list",
+				"data": [
+					{
+						"id": "dlv_1Hq2LxW9cVbN3mKpRtYs0a",
+						"object": "webhook_delivery",
+						"webhook_id": "wh_1Hq2LxW9cVbN3mKpRtYs0a",
+						"event_id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+						"event_type": "message.received",
+						"test": false,
+						"state": "delivered",
+						"attempts": 1,
+						"last_status": 200,
+						"last_error": null,
+						"last_duration_ms": 182,
+						"last_response_body": "{\"ok\":true}",
+						"next_attempt_at": null,
+						"delivered_at": "2026-11-13T19:44:13.000Z",
+						"replay_of": null,
+						"created_at": "2026-11-13T19:44:12.000Z"
+					}
+				],
+				"has_more": false,
+				"next_cursor": null
+			}
+		},
+		"replayDelivery": {
+			"method": "POST",
+			"path": "/webhooks/{id}/deliveries/{delivery_id}/replay",
+			"status": 202,
+			"request": null,
+			"response": {
+				"id": "dlv_2Bf8QzD4kJmA6nXwEuTr1c",
+				"object": "webhook_delivery",
+				"webhook_id": "wh_1Hq2LxW9cVbN3mKpRtYs0a",
+				"event_id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+				"event_type": "message.received",
+				"test": false,
+				"state": "pending",
+				"attempts": 0,
+				"last_status": null,
+				"last_error": null,
+				"last_duration_ms": null,
+				"last_response_body": null,
+				"next_attempt_at": "2026-11-13T19:41:00.000Z",
+				"delivered_at": null,
+				"replay_of": "dlv_1Hq2LxW9cVbN3mKpRtYs0a",
+				"created_at": "2026-11-13T19:44:12.000Z"
+			}
+		},
+		"listContacts": {
+			"method": "GET",
+			"path": "/contacts",
+			"status": 200,
+			"request": null,
+			"response": {
+				"object": "list",
+				"data": [
+					{
+						"id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+						"object": "contact",
+						"handle": "+15555550123",
+						"kind": "phone",
+						"first_name": "Maria",
+						"last_name": "Alvarez",
+						"company": null,
+						"tags": [
+							"buyer"
+						],
+						"custom_fields": {
+							"showing": "412 Oak St"
+						},
+						"stopped": false,
+						"stopped_at": null,
+						"stop_source": null,
+						"last_service": "imessage",
+						"first_message_at": "2026-11-02T15:20:00.000Z",
+						"last_message_at": "2026-11-13T19:41:00.000Z",
+						"created_via": "message",
+						"created_at": "2026-11-02T15:20:00.000Z"
+					}
+				],
+				"has_more": false,
+				"next_cursor": null
+			}
+		},
+		"createContact": {
+			"method": "POST",
+			"path": "/contacts",
+			"status": 201,
+			"request": {
+				"handle": "+15555550123",
+				"first_name": "Maria",
+				"last_name": "Alvarez",
+				"tags": [
+					"buyer"
+				],
+				"custom_fields": {
+					"showing": "412 Oak St"
+				}
+			},
+			"response": {
+				"id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "contact",
+				"handle": "+15555550123",
+				"kind": "phone",
+				"first_name": "Maria",
+				"last_name": "Alvarez",
+				"company": null,
+				"tags": [
+					"buyer"
+				],
+				"custom_fields": {
+					"showing": "412 Oak St"
+				},
+				"stopped": false,
+				"stopped_at": null,
+				"stop_source": null,
+				"last_service": null,
+				"first_message_at": null,
+				"last_message_at": null,
+				"created_via": "api",
+				"created_at": "2026-11-02T15:20:00.000Z"
+			}
+		},
+		"getContact": {
+			"method": "GET",
+			"path": "/contacts/{id}",
+			"status": 200,
+			"request": null,
+			"response": {
+				"id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "contact",
+				"handle": "+15555550123",
+				"kind": "phone",
+				"first_name": "Maria",
+				"last_name": "Alvarez",
+				"company": null,
+				"tags": [
+					"buyer"
+				],
+				"custom_fields": {
+					"showing": "412 Oak St"
+				},
+				"stopped": false,
+				"stopped_at": null,
+				"stop_source": null,
+				"last_service": "imessage",
+				"first_message_at": "2026-11-02T15:20:00.000Z",
+				"last_message_at": "2026-11-13T19:41:00.000Z",
+				"created_via": "message",
+				"created_at": "2026-11-02T15:20:00.000Z"
+			}
+		},
+		"updateContact": {
+			"method": "PATCH",
+			"path": "/contacts/{id}",
+			"status": 200,
+			"request": {
+				"tags": [
+					"buyer",
+					"closed"
+				],
+				"custom_fields": {
+					"showing": "412 Oak St",
+					"closing": "Dec 3"
+				}
+			},
+			"response": {
+				"id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "contact",
+				"handle": "+15555550123",
+				"kind": "phone",
+				"first_name": "Maria",
+				"last_name": "Alvarez",
+				"company": null,
+				"tags": [
+					"buyer",
+					"closed"
+				],
+				"custom_fields": {
+					"showing": "412 Oak St",
+					"closing": "Dec 3"
+				},
+				"stopped": false,
+				"stopped_at": null,
+				"stop_source": null,
+				"last_service": "imessage",
+				"first_message_at": "2026-11-02T15:20:00.000Z",
+				"last_message_at": "2026-11-13T19:41:00.000Z",
+				"created_via": "message",
+				"created_at": "2026-11-02T15:20:00.000Z"
+			}
+		},
+		"deleteContact": {
+			"method": "DELETE",
+			"path": "/contacts/{id}",
+			"status": 200,
+			"request": null,
+			"response": {
+				"id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "contact",
+				"deleted": true
+			}
+		},
+		"listTemplates": {
+			"method": "GET",
+			"path": "/templates",
+			"status": 200,
+			"request": null,
+			"response": {
+				"object": "list",
+				"data": [
+					{
+						"id": "tpl_1Hq2LxW9cVbN3mKpRtYs0a",
+						"object": "template",
+						"name": "Showing reminder",
+						"body": "Hi {{first_name|there}}, see you at {{showing}} tomorrow.",
+						"variables": [
+							"first_name",
+							"showing"
+						],
+						"created_at": "2026-11-10T16:00:00.000Z",
+						"updated_at": "2026-11-10T16:00:00.000Z"
+					}
+				],
+				"has_more": false,
+				"next_cursor": null
+			}
+		},
+		"createTemplate": {
+			"method": "POST",
+			"path": "/templates",
+			"status": 201,
+			"request": {
+				"name": "Showing reminder",
+				"body": "Hi {{first_name|there}}, see you at {{showing}} tomorrow."
+			},
+			"response": {
+				"id": "tpl_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "template",
+				"name": "Showing reminder",
+				"body": "Hi {{first_name|there}}, see you at {{showing}} tomorrow.",
+				"variables": [
+					"first_name",
+					"showing"
+				],
+				"created_at": "2026-11-10T16:00:00.000Z",
+				"updated_at": "2026-11-10T16:00:00.000Z"
+			}
+		},
+		"getTemplate": {
+			"method": "GET",
+			"path": "/templates/{id}",
+			"status": 200,
+			"request": null,
+			"response": {
+				"id": "tpl_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "template",
+				"name": "Showing reminder",
+				"body": "Hi {{first_name|there}}, see you at {{showing}} tomorrow.",
+				"variables": [
+					"first_name",
+					"showing"
+				],
+				"created_at": "2026-11-10T16:00:00.000Z",
+				"updated_at": "2026-11-10T16:00:00.000Z"
+			}
+		},
+		"updateTemplate": {
+			"method": "PATCH",
+			"path": "/templates/{id}",
+			"status": 200,
+			"request": {
+				"body": "Hi {{first_name|there}}, a reminder that we see {{showing}} tomorrow at 10."
+			},
+			"response": {
+				"id": "tpl_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "template",
+				"name": "Showing reminder",
+				"body": "Hi {{first_name|there}}, a reminder that we see {{showing}} tomorrow at 10.",
+				"variables": [
+					"first_name",
+					"showing"
+				],
+				"created_at": "2026-11-10T16:00:00.000Z",
+				"updated_at": "2026-11-13T19:41:00.000Z"
+			}
+		},
+		"deleteTemplate": {
+			"method": "DELETE",
+			"path": "/templates/{id}",
+			"status": 200,
+			"request": null,
+			"response": {
+				"id": "tpl_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "template",
+				"deleted": true
+			}
+		},
+		"getAnalytics": {
+			"method": "GET",
+			"path": "/analytics",
+			"status": 200,
+			"request": null,
+			"response": {
+				"object": "analytics",
+				"days": 7,
+				"time_zone": "America/Chicago",
+				"from": "2026-11-07T06:00:00.000Z",
+				"to": "2026-11-13T19:41:00.000Z",
+				"first_text_at": "2026-09-02T16:20:00.000Z",
+				"totals": {
+					"sent": 182,
+					"received": 96,
+					"delivered": 171,
+					"read": 120,
+					"failed": 3,
+					"unconfirmed": 0,
+					"canceled": 4,
+					"expired": 1,
+					"people_texted": 64,
+					"people_replied": 41,
+					"new_people": 22,
+					"stops": 1
+				},
+				"delivery_rate": 0.9243,
+				"reply_rate": 0.6406,
+				"reply_window_hours": 72,
+				"response_times": {
+					"them_median_seconds": 1260,
+					"them_count": 58,
+					"you_median_seconds": 540,
+					"you_count": 37
+				},
+				"services": {
+					"imessage": 151,
+					"sms": 31
+				},
+				"by_day": [
+					{
+						"day": "2026-11-07",
+						"sent": 20,
+						"received": 9
+					}
+				],
+				"by_hour": [
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					[
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					]
+				],
+				"by_source": [
+					{
+						"source": "zapier",
+						"count": 104
+					},
+					{
+						"source": "inbox",
+						"count": 61
+					},
+					{
+						"source": "sequence",
+						"count": 17
+					}
+				],
+				"health": {
+					"waiting": 3,
+					"follow_up_gaps": 1,
+					"oldest_waiting_at": "2026-11-10T15:02:00.000Z",
+					"waiting_list": [
+						{
+							"conversation_id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+							"name": "Marcus Lee",
+							"handle": "+15555550123",
+							"is_group": false,
+							"since": "2026-11-10T15:02:00.000Z",
+							"follow_up_gap": true
+						}
+					],
+					"unconfirmed": 0,
+					"held": 2
+				},
+				"fixes": [
+					{
+						"key": "follow_up_gaps",
+						"title": "1 person answered you and hasn’t heard back in two days.",
+						"why": "A reply that waits days often goes cold.",
+						"count": 1,
+						"href": "/app/inbox?filter=waiting",
+						"severity": "high"
+					}
+				]
+			}
+		},
+		"listConversations": {
+			"method": "GET",
+			"path": "/conversations",
+			"status": 200,
+			"request": null,
+			"response": {
+				"object": "list",
+				"data": [
+					{
+						"id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+						"object": "conversation",
+						"kind": "person",
+						"title": "Maria Alvarez",
+						"handle": "+15555550123",
+						"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+						"chat_id": null,
+						"participants": [
+							"+15555550123"
+						],
+						"service": "imessage",
+						"last_message": {
+							"id": "msg_1Hq2LxW9cVbN3mKpRtYs0a",
+							"direction": "in",
+							"state": "received",
+							"preview": "Can we move the showing to 4?",
+							"files": 0,
+							"at": "2026-11-13T19:44:12.000Z"
+						},
+						"last_message_at": "2026-11-13T19:44:12.000Z",
+						"unread_count": 1,
+						"waiting": true,
+						"archived": false,
+						"stopped": false,
+						"created_at": "2026-11-02T15:20:00.000Z"
+					}
+				],
+				"has_more": false,
+				"next_cursor": null
+			}
+		},
+		"getConversation": {
+			"method": "GET",
+			"path": "/conversations/{id}",
+			"status": 200,
+			"request": null,
+			"response": {
+				"id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "conversation",
+				"kind": "person",
+				"title": "Maria Alvarez",
+				"handle": "+15555550123",
+				"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"chat_id": null,
+				"participants": [
+					"+15555550123"
+				],
+				"service": "imessage",
+				"last_message": {
+					"id": "msg_1Hq2LxW9cVbN3mKpRtYs0a",
+					"direction": "in",
+					"state": "received",
+					"preview": "Can we move the showing to 4?",
+					"files": 0,
+					"at": "2026-11-13T19:44:12.000Z"
+				},
+				"last_message_at": "2026-11-13T19:44:12.000Z",
+				"unread_count": 1,
+				"waiting": true,
+				"archived": false,
+				"stopped": false,
+				"created_at": "2026-11-02T15:20:00.000Z"
+			}
+		},
+		"updateConversation": {
+			"method": "PATCH",
+			"path": "/conversations/{id}",
+			"status": 200,
+			"request": {
+				"archived": true
+			},
+			"response": {
+				"id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "conversation",
+				"kind": "person",
+				"title": "Maria Alvarez",
+				"handle": "+15555550123",
+				"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"chat_id": null,
+				"participants": [
+					"+15555550123"
+				],
+				"service": "imessage",
+				"last_message": {
+					"id": "msg_1Hq2LxW9cVbN3mKpRtYs0a",
+					"direction": "in",
+					"state": "received",
+					"preview": "Can we move the showing to 4?",
+					"files": 0,
+					"at": "2026-11-13T19:44:12.000Z"
+				},
+				"last_message_at": "2026-11-13T19:44:12.000Z",
+				"unread_count": 0,
+				"waiting": true,
+				"archived": true,
+				"stopped": false,
+				"created_at": "2026-11-02T15:20:00.000Z"
+			}
+		},
+		"listConversationMessages": {
+			"method": "GET",
+			"path": "/conversations/{id}/messages",
+			"status": 200,
+			"request": null,
+			"response": {
+				"object": "list",
+				"data": [
+					{
+						"id": "msg_1Hq2LxW9cVbN3mKpRtYs0a",
+						"object": "message",
+						"direction": "out",
+						"state": "sent",
+						"to": "+15555550123",
+						"from": "+15555550100",
+						"chat_id": null,
+						"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+						"conversation_id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+						"text": "Hi Maria, the showing at 412 Oak St is confirmed for 3 PM.",
+						"text_deleted": false,
+						"files": [],
+						"service_requested": "auto",
+						"service": "imessage",
+						"sms_retry": false,
+						"source": "api",
+						"source_ref": null,
+						"metadata": {
+							"crm_id": "48213"
+						},
+						"hold": null,
+						"send_at": null,
+						"expires_at": "2026-11-14T19:41:00.000Z",
+						"failure": null,
+						"cancel_reason": null,
+						"resolution": null,
+						"resolved_at": null,
+						"resent_message_id": null,
+						"reply_to_id": null,
+						"reactions": [],
+						"edited_at": null,
+						"unsent_at": null,
+						"created_at": "2026-11-13T19:41:00.000Z",
+						"queued_at": "2026-11-13T19:41:00.000Z",
+						"sending_at": "2026-11-13T19:41:02.000Z",
+						"sent_at": "2026-11-13T19:41:05.000Z",
+						"delivered_at": null,
+						"read_at": null,
+						"failed_at": null,
+						"unconfirmed_at": null,
+						"expired_at": null,
+						"canceled_at": null,
+						"received_at": null
+					}
+				],
+				"has_more": false,
+				"next_cursor": null
+			}
+		},
+		"listBroadcasts": {
+			"method": "GET",
+			"path": "/broadcasts",
+			"status": 200,
+			"request": null,
+			"response": {
+				"object": "list",
+				"data": [
+					{
+						"id": "bc_1Hq2LxW9cVbN3mKpRtYs0a",
+						"object": "broadcast",
+						"name": "Open house Saturday",
+						"text": "Hi {{first_name|there}}, open house at 412 Oak St this Saturday 1–4. Reply STOP to opt out.",
+						"text_deleted": false,
+						"template_id": null,
+						"audience": {
+							"kind": "tags",
+							"tags": [
+								"buyer"
+							]
+						},
+						"service": "auto",
+						"state": "scheduled",
+						"send_at": "2026-11-14T15:00:00.000Z",
+						"started_at": null,
+						"completed_at": null,
+						"canceled_at": null,
+						"recipient_count": 42,
+						"counts": {
+							"pending": 41,
+							"skipped": 1
+						},
+						"estimate": null,
+						"created_via": "api",
+						"created_at": "2026-11-13T19:41:00.000Z"
+					}
+				],
+				"has_more": false,
+				"next_cursor": null
+			}
+		},
+		"createBroadcast": {
+			"method": "POST",
+			"path": "/broadcasts",
+			"status": 201,
+			"request": {
+				"name": "Open house Saturday",
+				"text": "Hi {{first_name|there}}, open house at 412 Oak St this Saturday 1–4. Reply STOP to opt out.",
+				"tags": [
+					"buyer"
+				],
+				"send_at": "2026-11-14T15:00:00.000Z"
+			},
+			"response": {
+				"id": "bc_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "broadcast",
+				"name": "Open house Saturday",
+				"text": "Hi {{first_name|there}}, open house at 412 Oak St this Saturday 1–4. Reply STOP to opt out.",
+				"text_deleted": false,
+				"template_id": null,
+				"audience": {
+					"kind": "tags",
+					"tags": [
+						"buyer"
+					]
+				},
+				"service": "auto",
+				"state": "scheduled",
+				"send_at": "2026-11-14T15:00:00.000Z",
+				"started_at": null,
+				"completed_at": null,
+				"canceled_at": null,
+				"recipient_count": 42,
+				"counts": {
+					"pending": 41,
+					"skipped": 1
+				},
+				"estimate": {
+					"first_at": "2026-11-14T15:00:00.000Z",
+					"last_at": "2026-11-14T15:14:20.000Z",
+					"days": 1,
+					"waits_for": [],
+					"blocked_by": null,
+					"mac_online": true
+				},
+				"created_via": "api",
+				"created_at": "2026-11-13T19:41:00.000Z"
+			}
+		},
+		"previewBroadcast": {
+			"method": "POST",
+			"path": "/broadcasts/preview",
+			"status": 200,
+			"request": {
+				"text": "Hi {{first_name|there}}, open house at 412 Oak St this Saturday 1–4.",
+				"tags": [
+					"buyer"
+				]
+			},
+			"response": {
+				"object": "broadcast_preview",
+				"recipient_count": 42,
+				"stopped_count": 1,
+				"new_people_count": 3,
+				"duplicate_count": 0,
+				"samples": [
+					{
+						"handle": "+15555550123",
+						"name": "Maria Alvarez",
+						"text": "Hi Maria, open house at 412 Oak St this Saturday 1–4.",
+						"missing": []
+					}
+				],
+				"estimate": {
+					"first_at": "2026-11-14T15:00:00.000Z",
+					"last_at": "2026-11-14T15:14:20.000Z",
+					"days": 1,
+					"waits_for": [],
+					"blocked_by": null,
+					"mac_online": true
+				}
+			}
+		},
+		"getBroadcast": {
+			"method": "GET",
+			"path": "/broadcasts/{id}",
+			"status": 200,
+			"request": null,
+			"response": {
+				"id": "bc_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "broadcast",
+				"name": "Open house Saturday",
+				"text": "Hi {{first_name|there}}, open house at 412 Oak St this Saturday 1–4. Reply STOP to opt out.",
+				"text_deleted": false,
+				"template_id": null,
+				"audience": {
+					"kind": "tags",
+					"tags": [
+						"buyer"
+					]
+				},
+				"service": "auto",
+				"state": "scheduled",
+				"send_at": "2026-11-14T15:00:00.000Z",
+				"started_at": null,
+				"completed_at": null,
+				"canceled_at": null,
+				"recipient_count": 42,
+				"counts": {
+					"pending": 41,
+					"skipped": 1
+				},
+				"estimate": {
+					"first_at": "2026-11-14T15:00:00.000Z",
+					"last_at": "2026-11-14T15:14:20.000Z",
+					"days": 1,
+					"waits_for": [],
+					"blocked_by": null,
+					"mac_online": true
+				},
+				"created_via": "api",
+				"created_at": "2026-11-13T19:41:00.000Z"
+			}
+		},
+		"listBroadcastRecipients": {
+			"method": "GET",
+			"path": "/broadcasts/{id}/recipients",
+			"status": 200,
+			"request": null,
+			"response": {
+				"object": "list",
+				"data": [
+					{
+						"object": "broadcast_recipient",
+						"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+						"handle": "+15555550123",
+						"name": "Maria Alvarez",
+						"state": "delivered",
+						"skip_reason": null,
+						"message_id": "msg_1Hq2LxW9cVbN3mKpRtYs0a"
+					}
+				],
+				"has_more": false,
+				"next_cursor": null
+			}
+		},
+		"cancelBroadcast": {
+			"method": "POST",
+			"path": "/broadcasts/{id}/cancel",
+			"status": 200,
+			"request": null,
+			"response": {
+				"id": "bc_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "broadcast",
+				"name": "Open house Saturday",
+				"text": "Hi {{first_name|there}}, open house at 412 Oak St this Saturday 1–4. Reply STOP to opt out.",
+				"text_deleted": false,
+				"template_id": null,
+				"audience": {
+					"kind": "tags",
+					"tags": [
+						"buyer"
+					]
+				},
+				"service": "auto",
+				"state": "canceled",
+				"send_at": "2026-11-14T15:00:00.000Z",
+				"started_at": null,
+				"completed_at": null,
+				"canceled_at": "2026-11-13T19:41:00.000Z",
+				"recipient_count": 42,
+				"counts": {
+					"sent": 20,
+					"canceled": 21,
+					"skipped": 1
+				},
+				"estimate": null,
+				"created_via": "api",
+				"created_at": "2026-11-13T19:41:00.000Z"
+			}
+		},
+		"listSequences": {
+			"method": "GET",
+			"path": "/sequences",
+			"status": 200,
+			"request": null,
+			"response": {
+				"object": "list",
+				"data": [
+					{
+						"id": "seq_1Hq2LxW9cVbN3mKpRtYs0a",
+						"object": "sequence",
+						"name": "New lead follow-up",
+						"description": "For people who ask about a listing.",
+						"state": "active",
+						"stop_on_reply": true,
+						"send_window": {
+							"days": [
+								"mon",
+								"tue",
+								"wed",
+								"thu",
+								"fri"
+							],
+							"start": "09:00",
+							"end": "18:00"
+						},
+						"steps": [
+							{
+								"id": "step_1Hq2LxW9cVbN3mKpRtYs0a",
+								"position": 0,
+								"kind": "text",
+								"wait_seconds": null,
+								"text": "Hi {{first_name|there}}, thanks for asking about {{listing}}. Want to see it?",
+								"template_id": null,
+								"service": "auto"
+							},
+							{
+								"id": "step_2Bf8QzD4kJmA6nXwEuTr1c",
+								"position": 1,
+								"kind": "wait",
+								"wait_seconds": 172800,
+								"text": null,
+								"template_id": null,
+								"service": "auto"
+							},
+							{
+								"id": "step_3Lp3VsC7hGqE5tZyKbWn2d",
+								"position": 2,
+								"kind": "text",
+								"wait_seconds": null,
+								"text": "Just checking in. Still interested in {{listing}}?",
+								"template_id": null,
+								"service": "auto"
+							}
+						],
+						"counts": {
+							"active": 12,
+							"completed": 30,
+							"stopped": 9,
+							"canceled": 1
+						},
+						"created_via": "dashboard",
+						"created_at": "2026-11-01T15:00:00.000Z"
+					}
+				],
+				"has_more": false,
+				"next_cursor": null
+			}
+		},
+		"createSequence": {
+			"method": "POST",
+			"path": "/sequences",
+			"status": 201,
+			"request": {
+				"name": "New lead follow-up",
+				"steps": [
+					{
+						"kind": "text",
+						"text": "Hi {{first_name|there}}, thanks for asking about {{listing}}. Want to see it?"
+					},
+					{
+						"kind": "wait",
+						"wait_seconds": 172800
+					},
+					{
+						"kind": "text",
+						"text": "Just checking in. Still interested in {{listing}}?"
+					}
+				],
+				"send_window": {
+					"days": [
+						"mon",
+						"tue",
+						"wed",
+						"thu",
+						"fri"
+					],
+					"start": "09:00",
+					"end": "18:00"
+				}
+			},
+			"response": {
+				"id": "seq_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "sequence",
+				"name": "New lead follow-up",
+				"description": "For people who ask about a listing.",
+				"state": "active",
+				"stop_on_reply": true,
+				"send_window": {
+					"days": [
+						"mon",
+						"tue",
+						"wed",
+						"thu",
+						"fri"
+					],
+					"start": "09:00",
+					"end": "18:00"
+				},
+				"steps": [
+					{
+						"id": "step_1Hq2LxW9cVbN3mKpRtYs0a",
+						"position": 0,
+						"kind": "text",
+						"wait_seconds": null,
+						"text": "Hi {{first_name|there}}, thanks for asking about {{listing}}. Want to see it?",
+						"template_id": null,
+						"service": "auto"
+					},
+					{
+						"id": "step_2Bf8QzD4kJmA6nXwEuTr1c",
+						"position": 1,
+						"kind": "wait",
+						"wait_seconds": 172800,
+						"text": null,
+						"template_id": null,
+						"service": "auto"
+					},
+					{
+						"id": "step_3Lp3VsC7hGqE5tZyKbWn2d",
+						"position": 2,
+						"kind": "text",
+						"wait_seconds": null,
+						"text": "Just checking in. Still interested in {{listing}}?",
+						"template_id": null,
+						"service": "auto"
+					}
+				],
+				"counts": {},
+				"created_via": "dashboard",
+				"created_at": "2026-11-01T15:00:00.000Z"
+			}
+		},
+		"getSequence": {
+			"method": "GET",
+			"path": "/sequences/{id}",
+			"status": 200,
+			"request": null,
+			"response": {
+				"id": "seq_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "sequence",
+				"name": "New lead follow-up",
+				"description": "For people who ask about a listing.",
+				"state": "active",
+				"stop_on_reply": true,
+				"send_window": {
+					"days": [
+						"mon",
+						"tue",
+						"wed",
+						"thu",
+						"fri"
+					],
+					"start": "09:00",
+					"end": "18:00"
+				},
+				"steps": [
+					{
+						"id": "step_1Hq2LxW9cVbN3mKpRtYs0a",
+						"position": 0,
+						"kind": "text",
+						"wait_seconds": null,
+						"text": "Hi {{first_name|there}}, thanks for asking about {{listing}}. Want to see it?",
+						"template_id": null,
+						"service": "auto"
+					},
+					{
+						"id": "step_2Bf8QzD4kJmA6nXwEuTr1c",
+						"position": 1,
+						"kind": "wait",
+						"wait_seconds": 172800,
+						"text": null,
+						"template_id": null,
+						"service": "auto"
+					},
+					{
+						"id": "step_3Lp3VsC7hGqE5tZyKbWn2d",
+						"position": 2,
+						"kind": "text",
+						"wait_seconds": null,
+						"text": "Just checking in. Still interested in {{listing}}?",
+						"template_id": null,
+						"service": "auto"
+					}
+				],
+				"counts": {
+					"active": 12,
+					"completed": 30,
+					"stopped": 9,
+					"canceled": 1
+				},
+				"created_via": "dashboard",
+				"created_at": "2026-11-01T15:00:00.000Z"
+			}
+		},
+		"updateSequence": {
+			"method": "PATCH",
+			"path": "/sequences/{id}",
+			"status": 200,
+			"request": {
+				"state": "paused"
+			},
+			"response": {
+				"id": "seq_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "sequence",
+				"name": "New lead follow-up",
+				"description": "For people who ask about a listing.",
+				"state": "paused",
+				"stop_on_reply": true,
+				"send_window": {
+					"days": [
+						"mon",
+						"tue",
+						"wed",
+						"thu",
+						"fri"
+					],
+					"start": "09:00",
+					"end": "18:00"
+				},
+				"steps": [
+					{
+						"id": "step_1Hq2LxW9cVbN3mKpRtYs0a",
+						"position": 0,
+						"kind": "text",
+						"wait_seconds": null,
+						"text": "Hi {{first_name|there}}, thanks for asking about {{listing}}. Want to see it?",
+						"template_id": null,
+						"service": "auto"
+					},
+					{
+						"id": "step_2Bf8QzD4kJmA6nXwEuTr1c",
+						"position": 1,
+						"kind": "wait",
+						"wait_seconds": 172800,
+						"text": null,
+						"template_id": null,
+						"service": "auto"
+					},
+					{
+						"id": "step_3Lp3VsC7hGqE5tZyKbWn2d",
+						"position": 2,
+						"kind": "text",
+						"wait_seconds": null,
+						"text": "Just checking in. Still interested in {{listing}}?",
+						"template_id": null,
+						"service": "auto"
+					}
+				],
+				"counts": {
+					"active": 12,
+					"completed": 30,
+					"stopped": 9,
+					"canceled": 1
+				},
+				"created_via": "dashboard",
+				"created_at": "2026-11-01T15:00:00.000Z"
+			}
+		},
+		"listEnrollments": {
+			"method": "GET",
+			"path": "/sequences/{id}/enrollments",
+			"status": 200,
+			"request": null,
+			"response": {
+				"object": "list",
+				"data": [
+					{
+						"id": "enr_1Hq2LxW9cVbN3mKpRtYs0a",
+						"object": "enrollment",
+						"sequence_id": "seq_1Hq2LxW9cVbN3mKpRtYs0a",
+						"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+						"handle": "+15555550123",
+						"state": "active",
+						"current_step": 2,
+						"next_run_at": "2026-11-15T19:41:00.000Z",
+						"stop_reason": null,
+						"enrolled_via": "api",
+						"variables": {
+							"listing": "412 Oak St"
+						},
+						"enrolled_at": "2026-11-13T19:41:00.000Z",
+						"completed_at": null
+					}
+				],
+				"has_more": false,
+				"next_cursor": null
+			}
+		},
+		"enrollInSequence": {
+			"method": "POST",
+			"path": "/sequences/{id}/enrollments",
+			"status": 201,
+			"request": {
+				"to": "+15555550123",
+				"first_name": "Maria",
+				"variables": {
+					"listing": "412 Oak St"
+				}
+			},
+			"response": {
+				"id": "enr_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "enrollment",
+				"sequence_id": "seq_1Hq2LxW9cVbN3mKpRtYs0a",
+				"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"handle": "+15555550123",
+				"state": "active",
+				"current_step": 0,
+				"next_run_at": "2026-11-13T19:41:00.000Z",
+				"stop_reason": null,
+				"enrolled_via": "api",
+				"variables": {
+					"listing": "412 Oak St"
+				},
+				"enrolled_at": "2026-11-13T19:41:00.000Z",
+				"completed_at": null
+			}
+		},
+		"getEnrollment": {
+			"method": "GET",
+			"path": "/enrollments/{id}",
+			"status": 200,
+			"request": null,
+			"response": {
+				"id": "enr_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "enrollment",
+				"sequence_id": "seq_1Hq2LxW9cVbN3mKpRtYs0a",
+				"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"handle": "+15555550123",
+				"state": "active",
+				"current_step": 2,
+				"next_run_at": "2026-11-15T19:41:00.000Z",
+				"stop_reason": null,
+				"enrolled_via": "api",
+				"variables": {
+					"listing": "412 Oak St"
+				},
+				"enrolled_at": "2026-11-13T19:41:00.000Z",
+				"completed_at": null,
+				"timeline": [
+					{
+						"type": "enrolled",
+						"position": null,
+						"message_id": null,
+						"until": null,
+						"detail": "Added through the API.",
+						"at": "2026-11-13T19:41:00.000Z"
+					},
+					{
+						"type": "text_queued",
+						"position": 0,
+						"message_id": "msg_1Hq2LxW9cVbN3mKpRtYs0a",
+						"until": null,
+						"detail": null,
+						"at": "2026-11-13T19:41:00.000Z"
+					},
+					{
+						"type": "waiting",
+						"position": 1,
+						"message_id": null,
+						"until": "2026-11-15T19:41:00.000Z",
+						"detail": "Waits 2 days.",
+						"at": "2026-11-13T19:41:00.000Z"
+					}
+				]
+			}
+		},
+		"cancelEnrollment": {
+			"method": "POST",
+			"path": "/enrollments/{id}/cancel",
+			"status": 200,
+			"request": null,
+			"response": {
+				"id": "enr_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "enrollment",
+				"sequence_id": "seq_1Hq2LxW9cVbN3mKpRtYs0a",
+				"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"handle": "+15555550123",
+				"state": "canceled",
+				"current_step": 2,
+				"next_run_at": null,
+				"stop_reason": "canceled",
+				"enrolled_via": "api",
+				"variables": {
+					"listing": "412 Oak St"
+				},
+				"enrolled_at": "2026-11-13T19:41:00.000Z",
+				"completed_at": "2026-11-13T19:41:00.000Z"
+			}
+		},
+		"listTextHooks": {
+			"method": "GET",
+			"path": "/hooks",
+			"status": 200,
+			"request": null,
+			"response": {
+				"object": "list",
+				"data": [
+					{
+						"id": "hook_1Hq2LxW9cVbN3mKpRtYs0a",
+						"object": "text_hook",
+						"name": "Calendly bookings",
+						"url": "https://usebluebot.com/h/th_8Rk2mQ4zN7wX1cVbL5pT9yHsQ2aVc0Ld",
+						"enabled": true,
+						"test_mode": false,
+						"mapping": {
+							"to": "{{body.payload.questions_and_answers.0.answer}}",
+							"text": "Hi {{body.payload.name}}, you’re booked for {{body.payload.scheduled_event.start_time}}. Text back if anything changes.",
+							"first_name": "{{body.payload.first_name}}",
+							"last_name": "{{body.payload.last_name}}",
+							"tags": "calendly"
+						},
+						"template_id": null,
+						"sequence_id": null,
+						"last_used_at": "2026-11-13T18:02:00.000Z",
+						"created_at": "2026-11-03T16:00:00.000Z"
+					}
+				],
+				"has_more": false,
+				"next_cursor": null
+			}
+		},
+		"createTextHook": {
+			"method": "POST",
+			"path": "/hooks",
+			"status": 201,
+			"request": {
+				"name": "Calendly bookings",
+				"preset": "calendly",
+				"test_mode": true
+			},
+			"response": {
+				"id": "hook_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "text_hook",
+				"name": "Calendly bookings",
+				"url": "https://usebluebot.com/h/th_8Rk2mQ4zN7wX1cVbL5pT9yHsQ2aVc0Ld",
+				"enabled": true,
+				"test_mode": true,
+				"mapping": {
+					"to": "{{body.payload.questions_and_answers.0.answer}}",
+					"text": "Hi {{body.payload.name}}, you’re booked for {{body.payload.scheduled_event.start_time}}. Text back if anything changes.",
+					"first_name": "{{body.payload.first_name}}",
+					"last_name": "{{body.payload.last_name}}",
+					"tags": "calendly"
+				},
+				"template_id": null,
+				"sequence_id": null,
+				"last_used_at": null,
+				"created_at": "2026-11-03T16:00:00.000Z"
+			}
+		},
+		"getTextHook": {
+			"method": "GET",
+			"path": "/hooks/{id}",
+			"status": 200,
+			"request": null,
+			"response": {
+				"id": "hook_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "text_hook",
+				"name": "Calendly bookings",
+				"url": "https://usebluebot.com/h/th_8Rk2mQ4zN7wX1cVbL5pT9yHsQ2aVc0Ld",
+				"enabled": true,
+				"test_mode": false,
+				"mapping": {
+					"to": "{{body.payload.questions_and_answers.0.answer}}",
+					"text": "Hi {{body.payload.name}}, you’re booked for {{body.payload.scheduled_event.start_time}}. Text back if anything changes.",
+					"first_name": "{{body.payload.first_name}}",
+					"last_name": "{{body.payload.last_name}}",
+					"tags": "calendly"
+				},
+				"template_id": null,
+				"sequence_id": null,
+				"last_used_at": "2026-11-13T18:02:00.000Z",
+				"created_at": "2026-11-03T16:00:00.000Z"
+			}
+		},
+		"updateTextHook": {
+			"method": "PATCH",
+			"path": "/hooks/{id}",
+			"status": 200,
+			"request": {
+				"test_mode": false
+			},
+			"response": {
+				"id": "hook_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "text_hook",
+				"name": "Calendly bookings",
+				"url": "https://usebluebot.com/h/th_8Rk2mQ4zN7wX1cVbL5pT9yHsQ2aVc0Ld",
+				"enabled": true,
+				"test_mode": false,
+				"mapping": {
+					"to": "{{body.payload.questions_and_answers.0.answer}}",
+					"text": "Hi {{body.payload.name}}, you’re booked for {{body.payload.scheduled_event.start_time}}. Text back if anything changes.",
+					"first_name": "{{body.payload.first_name}}",
+					"last_name": "{{body.payload.last_name}}",
+					"tags": "calendly"
+				},
+				"template_id": null,
+				"sequence_id": null,
+				"last_used_at": "2026-11-13T18:02:00.000Z",
+				"created_at": "2026-11-03T16:00:00.000Z"
+			}
+		},
+		"deleteTextHook": {
+			"method": "DELETE",
+			"path": "/hooks/{id}",
+			"status": 200,
+			"request": null,
+			"response": {
+				"id": "hook_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "text_hook",
+				"deleted": true
+			}
+		},
+		"listKeywordRules": {
+			"method": "GET",
+			"path": "/automations/rules",
+			"status": 200,
+			"request": null,
+			"response": {
+				"object": "list",
+				"data": [
+					{
+						"id": "kw_1Hq2LxW9cVbN3mKpRtYs0a",
+						"object": "keyword_rule",
+						"name": "Pricing",
+						"match": "word",
+						"keywords": [
+							"price",
+							"pricing",
+							"cost"
+						],
+						"pattern": null,
+						"case_sensitive": false,
+						"actions": [
+							{
+								"type": "reply",
+								"text": "Our plans start at $29 a month. Want me to send the details?",
+								"template_id": null
+							},
+							{
+								"type": "tag",
+								"tags": [
+									"asked-pricing"
+								]
+							}
+						],
+						"position": 10,
+						"enabled": true,
+						"fire_count": 18,
+						"last_fired_at": "2026-11-13T17:20:00.000Z",
+						"created_at": "2026-11-02T15:00:00.000Z"
+					}
+				],
+				"has_more": false,
+				"next_cursor": null
+			}
+		},
+		"createKeywordRule": {
+			"method": "POST",
+			"path": "/automations/rules",
+			"status": 201,
+			"request": {
+				"name": "Pricing",
+				"match": "word",
+				"keywords": [
+					"price",
+					"pricing",
+					"cost"
+				],
+				"actions": [
+					{
+						"type": "reply",
+						"text": "Our plans start at $29 a month. Want me to send the details?"
+					}
+				]
+			},
+			"response": {
+				"id": "kw_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "keyword_rule",
+				"name": "Pricing",
+				"match": "word",
+				"keywords": [
+					"price",
+					"pricing",
+					"cost"
+				],
+				"pattern": null,
+				"case_sensitive": false,
+				"actions": [
+					{
+						"type": "reply",
+						"text": "Our plans start at $29 a month. Want me to send the details?",
+						"template_id": null
+					},
+					{
+						"type": "tag",
+						"tags": [
+							"asked-pricing"
+						]
+					}
+				],
+				"position": 10,
+				"enabled": true,
+				"fire_count": 0,
+				"last_fired_at": null,
+				"created_at": "2026-11-02T15:00:00.000Z"
+			}
+		},
+		"getKeywordRule": {
+			"method": "GET",
+			"path": "/automations/rules/{id}",
+			"status": 200,
+			"request": null,
+			"response": {
+				"id": "kw_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "keyword_rule",
+				"name": "Pricing",
+				"match": "word",
+				"keywords": [
+					"price",
+					"pricing",
+					"cost"
+				],
+				"pattern": null,
+				"case_sensitive": false,
+				"actions": [
+					{
+						"type": "reply",
+						"text": "Our plans start at $29 a month. Want me to send the details?",
+						"template_id": null
+					},
+					{
+						"type": "tag",
+						"tags": [
+							"asked-pricing"
+						]
+					}
+				],
+				"position": 10,
+				"enabled": true,
+				"fire_count": 18,
+				"last_fired_at": "2026-11-13T17:20:00.000Z",
+				"created_at": "2026-11-02T15:00:00.000Z"
+			}
+		},
+		"updateKeywordRule": {
+			"method": "PATCH",
+			"path": "/automations/rules/{id}",
+			"status": 200,
+			"request": {
+				"enabled": false
+			},
+			"response": {
+				"id": "kw_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "keyword_rule",
+				"name": "Pricing",
+				"match": "word",
+				"keywords": [
+					"price",
+					"pricing",
+					"cost"
+				],
+				"pattern": null,
+				"case_sensitive": false,
+				"actions": [
+					{
+						"type": "reply",
+						"text": "Our plans start at $29 a month. Want me to send the details?",
+						"template_id": null
+					},
+					{
+						"type": "tag",
+						"tags": [
+							"asked-pricing"
+						]
+					}
+				],
+				"position": 10,
+				"enabled": false,
+				"fire_count": 18,
+				"last_fired_at": "2026-11-13T17:20:00.000Z",
+				"created_at": "2026-11-02T15:00:00.000Z"
+			}
+		},
+		"deleteKeywordRule": {
+			"method": "DELETE",
+			"path": "/automations/rules/{id}",
+			"status": 200,
+			"request": null,
+			"response": {
+				"id": "kw_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "keyword_rule",
+				"deleted": true
+			}
+		},
+		"getAwayMessage": {
+			"method": "GET",
+			"path": "/automations/away",
+			"status": 200,
+			"request": null,
+			"response": {
+				"object": "away_message",
+				"enabled": true,
+				"text": "Thanks for your text! We’re closed right now and will reply when we open at 9 AM.",
+				"cooldown_hours": 12,
+				"business_hours": {
+					"mon": {
+						"start": "09:00",
+						"end": "17:00"
+					},
+					"tue": {
+						"start": "09:00",
+						"end": "17:00"
+					},
+					"wed": {
+						"start": "09:00",
+						"end": "17:00"
+					},
+					"thu": {
+						"start": "09:00",
+						"end": "17:00"
+					},
+					"fri": {
+						"start": "09:00",
+						"end": "17:00"
+					},
+					"sat": null,
+					"sun": null
+				},
+				"time_zone": "America/Chicago",
+				"open_now": true
+			}
+		},
+		"updateAwayMessage": {
+			"method": "PATCH",
+			"path": "/automations/away",
+			"status": 200,
+			"request": {
+				"enabled": true,
+				"cooldown_hours": 12
+			},
+			"response": {
+				"object": "away_message",
+				"enabled": true,
+				"text": "Thanks for your text! We’re closed right now and will reply when we open at 9 AM.",
+				"cooldown_hours": 12,
+				"business_hours": {
+					"mon": {
+						"start": "09:00",
+						"end": "17:00"
+					},
+					"tue": {
+						"start": "09:00",
+						"end": "17:00"
+					},
+					"wed": {
+						"start": "09:00",
+						"end": "17:00"
+					},
+					"thu": {
+						"start": "09:00",
+						"end": "17:00"
+					},
+					"fri": {
+						"start": "09:00",
+						"end": "17:00"
+					},
+					"sat": null,
+					"sun": null
+				},
+				"time_zone": "America/Chicago",
+				"open_now": true
+			}
+		}
+	},
+	"events": {
+		"message.queued": {
+			"id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+			"object": "event",
+			"type": "message.queued",
+			"api_version": "2026-11-13",
+			"timestamp": "2026-11-13T19:41:00.000Z",
+			"data": {
+				"id": "msg_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "message",
+				"direction": "out",
+				"state": "queued",
+				"to": "+15555550123",
+				"from": "+15555550100",
+				"chat_id": null,
+				"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"conversation_id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+				"text": "Hi Maria, the showing at 412 Oak St is confirmed for 3 PM.",
+				"text_deleted": false,
+				"files": [],
+				"service_requested": "auto",
+				"service": null,
+				"sms_retry": false,
+				"source": "api",
+				"source_ref": null,
+				"metadata": {
+					"crm_id": "48213"
+				},
+				"hold": null,
+				"send_at": null,
+				"expires_at": "2026-11-14T19:41:00.000Z",
+				"failure": null,
+				"cancel_reason": null,
+				"resolution": null,
+				"resolved_at": null,
+				"resent_message_id": null,
+				"reply_to_id": null,
+				"reactions": [],
+				"edited_at": null,
+				"unsent_at": null,
+				"created_at": "2026-11-13T19:41:00.000Z",
+				"queued_at": "2026-11-13T19:41:00.000Z",
+				"sending_at": null,
+				"sent_at": null,
+				"delivered_at": null,
+				"read_at": null,
+				"failed_at": null,
+				"unconfirmed_at": null,
+				"expired_at": null,
+				"canceled_at": null,
+				"received_at": null
+			}
+		},
+		"message.sent": {
+			"id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+			"object": "event",
+			"type": "message.sent",
+			"api_version": "2026-11-13",
+			"timestamp": "2026-11-13T19:41:00.000Z",
+			"data": {
+				"id": "msg_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "message",
+				"direction": "out",
+				"state": "sent",
+				"to": "+15555550123",
+				"from": "+15555550100",
+				"chat_id": null,
+				"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"conversation_id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+				"text": "Hi Maria, the showing at 412 Oak St is confirmed for 3 PM.",
+				"text_deleted": false,
+				"files": [],
+				"service_requested": "auto",
+				"service": "imessage",
+				"sms_retry": false,
+				"source": "api",
+				"source_ref": null,
+				"metadata": {
+					"crm_id": "48213"
+				},
+				"hold": null,
+				"send_at": null,
+				"expires_at": "2026-11-14T19:41:00.000Z",
+				"failure": null,
+				"cancel_reason": null,
+				"resolution": null,
+				"resolved_at": null,
+				"resent_message_id": null,
+				"reply_to_id": null,
+				"reactions": [],
+				"edited_at": null,
+				"unsent_at": null,
+				"created_at": "2026-11-13T19:41:00.000Z",
+				"queued_at": "2026-11-13T19:41:00.000Z",
+				"sending_at": "2026-11-13T19:41:02.000Z",
+				"sent_at": "2026-11-13T19:41:05.000Z",
+				"delivered_at": null,
+				"read_at": null,
+				"failed_at": null,
+				"unconfirmed_at": null,
+				"expired_at": null,
+				"canceled_at": null,
+				"received_at": null
+			}
+		},
+		"message.delivered": {
+			"id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+			"object": "event",
+			"type": "message.delivered",
+			"api_version": "2026-11-13",
+			"timestamp": "2026-11-13T19:41:00.000Z",
+			"data": {
+				"id": "msg_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "message",
+				"direction": "out",
+				"state": "delivered",
+				"to": "+15555550123",
+				"from": "+15555550100",
+				"chat_id": null,
+				"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"conversation_id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+				"text": "Hi Maria, the showing at 412 Oak St is confirmed for 3 PM.",
+				"text_deleted": false,
+				"files": [],
+				"service_requested": "auto",
+				"service": "imessage",
+				"sms_retry": false,
+				"source": "api",
+				"source_ref": null,
+				"metadata": {
+					"crm_id": "48213"
+				},
+				"hold": null,
+				"send_at": null,
+				"expires_at": "2026-11-14T19:41:00.000Z",
+				"failure": null,
+				"cancel_reason": null,
+				"resolution": null,
+				"resolved_at": null,
+				"resent_message_id": null,
+				"reply_to_id": null,
+				"reactions": [],
+				"edited_at": null,
+				"unsent_at": null,
+				"created_at": "2026-11-13T19:41:00.000Z",
+				"queued_at": "2026-11-13T19:41:00.000Z",
+				"sending_at": "2026-11-13T19:41:02.000Z",
+				"sent_at": "2026-11-13T19:41:05.000Z",
+				"delivered_at": "2026-11-13T19:41:06.000Z",
+				"read_at": null,
+				"failed_at": null,
+				"unconfirmed_at": null,
+				"expired_at": null,
+				"canceled_at": null,
+				"received_at": null
+			}
+		},
+		"message.read": {
+			"id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+			"object": "event",
+			"type": "message.read",
+			"api_version": "2026-11-13",
+			"timestamp": "2026-11-13T19:41:00.000Z",
+			"data": {
+				"id": "msg_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "message",
+				"direction": "out",
+				"state": "read",
+				"to": "+15555550123",
+				"from": "+15555550100",
+				"chat_id": null,
+				"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"conversation_id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+				"text": "Hi Maria, the showing at 412 Oak St is confirmed for 3 PM.",
+				"text_deleted": false,
+				"files": [],
+				"service_requested": "auto",
+				"service": "imessage",
+				"sms_retry": false,
+				"source": "api",
+				"source_ref": null,
+				"metadata": {
+					"crm_id": "48213"
+				},
+				"hold": null,
+				"send_at": null,
+				"expires_at": "2026-11-14T19:41:00.000Z",
+				"failure": null,
+				"cancel_reason": null,
+				"resolution": null,
+				"resolved_at": null,
+				"resent_message_id": null,
+				"reply_to_id": null,
+				"reactions": [],
+				"edited_at": null,
+				"unsent_at": null,
+				"created_at": "2026-11-13T19:41:00.000Z",
+				"queued_at": "2026-11-13T19:41:00.000Z",
+				"sending_at": "2026-11-13T19:41:02.000Z",
+				"sent_at": "2026-11-13T19:41:05.000Z",
+				"delivered_at": "2026-11-13T19:41:06.000Z",
+				"read_at": "2026-11-13T19:43:30.000Z",
+				"failed_at": null,
+				"unconfirmed_at": null,
+				"expired_at": null,
+				"canceled_at": null,
+				"received_at": null
+			}
+		},
+		"message.failed": {
+			"id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+			"object": "event",
+			"type": "message.failed",
+			"api_version": "2026-11-13",
+			"timestamp": "2026-11-13T19:41:00.000Z",
+			"data": {
+				"id": "msg_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "message",
+				"direction": "out",
+				"state": "failed",
+				"to": "+15555550123",
+				"from": "+15555550100",
+				"chat_id": null,
+				"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"conversation_id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+				"text": "Hi Maria, the showing at 412 Oak St is confirmed for 3 PM.",
+				"text_deleted": false,
+				"files": [],
+				"service_requested": "imessage",
+				"service": null,
+				"sms_retry": false,
+				"source": "api",
+				"source_ref": null,
+				"metadata": {
+					"crm_id": "48213"
+				},
+				"hold": null,
+				"send_at": null,
+				"expires_at": "2026-11-14T19:41:00.000Z",
+				"failure": {
+					"reason": "not_on_imessage",
+					"detail": "Messages couldn’t send this as an iMessage."
+				},
+				"cancel_reason": null,
+				"resolution": null,
+				"resolved_at": null,
+				"resent_message_id": null,
+				"reply_to_id": null,
+				"reactions": [],
+				"edited_at": null,
+				"unsent_at": null,
+				"created_at": "2026-11-13T19:41:00.000Z",
+				"queued_at": "2026-11-13T19:41:00.000Z",
+				"sending_at": "2026-11-13T19:41:02.000Z",
+				"sent_at": null,
+				"delivered_at": null,
+				"read_at": null,
+				"failed_at": "2026-11-13T19:41:09.000Z",
+				"unconfirmed_at": null,
+				"expired_at": null,
+				"canceled_at": null,
+				"received_at": null
+			}
+		},
+		"message.unconfirmed": {
+			"id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+			"object": "event",
+			"type": "message.unconfirmed",
+			"api_version": "2026-11-13",
+			"timestamp": "2026-11-13T19:41:00.000Z",
+			"data": {
+				"id": "msg_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "message",
+				"direction": "out",
+				"state": "unconfirmed",
+				"to": "+15555550123",
+				"from": "+15555550100",
+				"chat_id": null,
+				"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"conversation_id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+				"text": "Hi Maria, the showing at 412 Oak St is confirmed for 3 PM.",
+				"text_deleted": false,
+				"files": [],
+				"service_requested": "auto",
+				"service": null,
+				"sms_retry": false,
+				"source": "api",
+				"source_ref": null,
+				"metadata": {
+					"crm_id": "48213"
+				},
+				"hold": null,
+				"send_at": null,
+				"expires_at": "2026-11-14T19:41:00.000Z",
+				"failure": null,
+				"cancel_reason": null,
+				"resolution": null,
+				"resolved_at": null,
+				"resent_message_id": null,
+				"reply_to_id": null,
+				"reactions": [],
+				"edited_at": null,
+				"unsent_at": null,
+				"created_at": "2026-11-13T19:41:00.000Z",
+				"queued_at": "2026-11-13T19:41:00.000Z",
+				"sending_at": "2026-11-13T19:41:02.000Z",
+				"sent_at": null,
+				"delivered_at": null,
+				"read_at": null,
+				"failed_at": null,
+				"unconfirmed_at": "2026-11-13T19:44:02.000Z",
+				"expired_at": null,
+				"canceled_at": null,
+				"received_at": null
+			}
+		},
+		"message.expired": {
+			"id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+			"object": "event",
+			"type": "message.expired",
+			"api_version": "2026-11-13",
+			"timestamp": "2026-11-13T19:41:00.000Z",
+			"data": {
+				"id": "msg_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "message",
+				"direction": "out",
+				"state": "expired",
+				"to": "+15555550123",
+				"from": "+15555550100",
+				"chat_id": null,
+				"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"conversation_id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+				"text": "Hi Maria, the showing at 412 Oak St is confirmed for 3 PM.",
+				"text_deleted": false,
+				"files": [],
+				"service_requested": "auto",
+				"service": null,
+				"sms_retry": false,
+				"source": "api",
+				"source_ref": null,
+				"metadata": {
+					"crm_id": "48213"
+				},
+				"hold": null,
+				"send_at": null,
+				"expires_at": "2026-11-14T19:41:00.000Z",
+				"failure": null,
+				"cancel_reason": null,
+				"resolution": null,
+				"resolved_at": null,
+				"resent_message_id": null,
+				"reply_to_id": null,
+				"reactions": [],
+				"edited_at": null,
+				"unsent_at": null,
+				"created_at": "2026-11-13T19:41:00.000Z",
+				"queued_at": "2026-11-13T19:41:00.000Z",
+				"sending_at": null,
+				"sent_at": null,
+				"delivered_at": null,
+				"read_at": null,
+				"failed_at": null,
+				"unconfirmed_at": null,
+				"expired_at": "2026-11-14T19:41:00.000Z",
+				"canceled_at": null,
+				"received_at": null
+			}
+		},
+		"message.canceled": {
+			"id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+			"object": "event",
+			"type": "message.canceled",
+			"api_version": "2026-11-13",
+			"timestamp": "2026-11-13T19:41:00.000Z",
+			"data": {
+				"id": "msg_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "message",
+				"direction": "out",
+				"state": "canceled",
+				"to": "+15555550123",
+				"from": "+15555550100",
+				"chat_id": null,
+				"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"conversation_id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+				"text": "Hi Maria, the showing at 412 Oak St is confirmed for 3 PM.",
+				"text_deleted": false,
+				"files": [],
+				"service_requested": "auto",
+				"service": null,
+				"sms_retry": false,
+				"source": "api",
+				"source_ref": null,
+				"metadata": {
+					"crm_id": "48213"
+				},
+				"hold": null,
+				"send_at": null,
+				"expires_at": "2026-11-14T19:41:00.000Z",
+				"failure": null,
+				"cancel_reason": "opted_out",
+				"resolution": null,
+				"resolved_at": null,
+				"resent_message_id": null,
+				"reply_to_id": null,
+				"reactions": [],
+				"edited_at": null,
+				"unsent_at": null,
+				"created_at": "2026-11-13T19:41:00.000Z",
+				"queued_at": "2026-11-13T19:41:00.000Z",
+				"sending_at": null,
+				"sent_at": null,
+				"delivered_at": null,
+				"read_at": null,
+				"failed_at": null,
+				"unconfirmed_at": null,
+				"expired_at": null,
+				"canceled_at": "2026-11-13T19:42:00.000Z",
+				"received_at": null
+			}
+		},
+		"message.received": {
+			"id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+			"object": "event",
+			"type": "message.received",
+			"api_version": "2026-11-13",
+			"timestamp": "2026-11-13T19:41:00.000Z",
+			"data": {
+				"id": "msg_2Bf8QzD4kJmA6nXwEuTr1c",
+				"object": "message",
+				"direction": "in",
+				"state": "received",
+				"to": "+15555550100",
+				"from": "+15555550123",
+				"chat_id": null,
+				"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"conversation_id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+				"text": "Perfect, see you there!",
+				"text_deleted": false,
+				"files": [],
+				"service_requested": "auto",
+				"service": "imessage",
+				"sms_retry": false,
+				"source": "mac",
+				"source_ref": null,
+				"metadata": {},
+				"hold": null,
+				"send_at": null,
+				"expires_at": null,
+				"failure": null,
+				"cancel_reason": null,
+				"resolution": null,
+				"resolved_at": null,
+				"resent_message_id": null,
+				"reply_to_id": null,
+				"reactions": [],
+				"edited_at": null,
+				"unsent_at": null,
+				"created_at": "2026-11-13T19:44:12.000Z",
+				"queued_at": null,
+				"sending_at": null,
+				"sent_at": null,
+				"delivered_at": null,
+				"read_at": null,
+				"failed_at": null,
+				"unconfirmed_at": null,
+				"expired_at": null,
+				"canceled_at": null,
+				"received_at": "2026-11-13T19:44:10.000Z"
+			}
+		},
+		"message.edited": {
+			"id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+			"object": "event",
+			"type": "message.edited",
+			"api_version": "2026-11-13",
+			"timestamp": "2026-11-13T19:41:00.000Z",
+			"data": {
+				"id": "msg_2Bf8QzD4kJmA6nXwEuTr1c",
+				"object": "message",
+				"direction": "in",
+				"state": "received",
+				"to": "+15555550100",
+				"from": "+15555550123",
+				"chat_id": null,
+				"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"conversation_id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+				"text": "Perfect, see you there at 3!",
+				"text_deleted": false,
+				"files": [],
+				"service_requested": "auto",
+				"service": "imessage",
+				"sms_retry": false,
+				"source": "mac",
+				"source_ref": null,
+				"metadata": {},
+				"hold": null,
+				"send_at": null,
+				"expires_at": null,
+				"failure": null,
+				"cancel_reason": null,
+				"resolution": null,
+				"resolved_at": null,
+				"resent_message_id": null,
+				"reply_to_id": null,
+				"reactions": [],
+				"edited_at": "2026-11-13T19:44:40.000Z",
+				"unsent_at": null,
+				"created_at": "2026-11-13T19:44:12.000Z",
+				"queued_at": null,
+				"sending_at": null,
+				"sent_at": null,
+				"delivered_at": null,
+				"read_at": null,
+				"failed_at": null,
+				"unconfirmed_at": null,
+				"expired_at": null,
+				"canceled_at": null,
+				"received_at": "2026-11-13T19:44:10.000Z"
+			}
+		},
+		"message.unsent": {
+			"id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+			"object": "event",
+			"type": "message.unsent",
+			"api_version": "2026-11-13",
+			"timestamp": "2026-11-13T19:41:00.000Z",
+			"data": {
+				"id": "msg_2Bf8QzD4kJmA6nXwEuTr1c",
+				"object": "message",
+				"direction": "in",
+				"state": "received",
+				"to": "+15555550100",
+				"from": "+15555550123",
+				"chat_id": null,
+				"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"conversation_id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+				"text": null,
+				"text_deleted": false,
+				"files": [],
+				"service_requested": "auto",
+				"service": "imessage",
+				"sms_retry": false,
+				"source": "mac",
+				"source_ref": null,
+				"metadata": {},
+				"hold": null,
+				"send_at": null,
+				"expires_at": null,
+				"failure": null,
+				"cancel_reason": null,
+				"resolution": null,
+				"resolved_at": null,
+				"resent_message_id": null,
+				"reply_to_id": null,
+				"reactions": [],
+				"edited_at": null,
+				"unsent_at": "2026-11-13T19:45:00.000Z",
+				"created_at": "2026-11-13T19:44:12.000Z",
+				"queued_at": null,
+				"sending_at": null,
+				"sent_at": null,
+				"delivered_at": null,
+				"read_at": null,
+				"failed_at": null,
+				"unconfirmed_at": null,
+				"expired_at": null,
+				"canceled_at": null,
+				"received_at": "2026-11-13T19:44:10.000Z"
+			}
+		},
+		"reaction.added": {
+			"id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+			"object": "event",
+			"type": "reaction.added",
+			"api_version": "2026-11-13",
+			"timestamp": "2026-11-13T19:41:00.000Z",
+			"data": {
+				"id": "rxn_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "reaction",
+				"kind": "love",
+				"emoji": null,
+				"from": "+15555550123",
+				"direction": "in",
+				"added_at": "2026-11-13T19:45:00.000Z",
+				"message_id": "msg_1Hq2LxW9cVbN3mKpRtYs0a",
+				"conversation_id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+				"chat_id": null,
+				"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"removed_at": null
+			}
+		},
+		"reaction.removed": {
+			"id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+			"object": "event",
+			"type": "reaction.removed",
+			"api_version": "2026-11-13",
+			"timestamp": "2026-11-13T19:41:00.000Z",
+			"data": {
+				"id": "rxn_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "reaction",
+				"kind": "love",
+				"emoji": null,
+				"from": "+15555550123",
+				"direction": "in",
+				"added_at": "2026-11-13T19:45:00.000Z",
+				"message_id": "msg_1Hq2LxW9cVbN3mKpRtYs0a",
+				"conversation_id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+				"chat_id": null,
+				"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"removed_at": "2026-11-13T19:46:00.000Z"
+			}
+		},
+		"chat.created": {
+			"id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+			"object": "event",
+			"type": "chat.created",
+			"api_version": "2026-11-13",
+			"timestamp": "2026-11-13T19:41:00.000Z",
+			"data": {
+				"id": "chat_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "chat",
+				"name": "Oak St closing",
+				"is_group": true,
+				"participants": [
+					"+15555550123",
+					"+15555550187"
+				],
+				"service": "imessage",
+				"last_message_at": "2026-11-13T19:41:00.000Z",
+				"created_at": "2026-11-13T19:41:00.000Z"
+			}
+		},
+		"contact.created": {
+			"id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+			"object": "event",
+			"type": "contact.created",
+			"api_version": "2026-11-13",
+			"timestamp": "2026-11-13T19:41:00.000Z",
+			"data": {
+				"id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "contact",
+				"handle": "+15555550123",
+				"kind": "phone",
+				"first_name": "Maria",
+				"last_name": "Alvarez",
+				"company": null,
+				"tags": [
+					"buyer"
+				],
+				"custom_fields": {},
+				"stopped": false,
+				"stopped_at": null,
+				"stop_source": null,
+				"last_service": "imessage",
+				"first_message_at": null,
+				"last_message_at": null,
+				"created_via": "api",
+				"created_at": "2026-11-13T19:41:00.000Z"
+			}
+		},
+		"contact.stopped": {
+			"id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+			"object": "event",
+			"type": "contact.stopped",
+			"api_version": "2026-11-13",
+			"timestamp": "2026-11-13T19:41:00.000Z",
+			"data": {
+				"id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "contact",
+				"handle": "+15555550123",
+				"kind": "phone",
+				"first_name": "Maria",
+				"last_name": "Alvarez",
+				"company": null,
+				"tags": [
+					"buyer"
+				],
+				"custom_fields": {},
+				"stopped": true,
+				"stopped_at": "2026-11-13T19:50:00.000Z",
+				"stop_source": "reply",
+				"last_service": "imessage",
+				"first_message_at": "2026-11-13T19:41:00.000Z",
+				"last_message_at": "2026-11-13T19:41:00.000Z",
+				"created_via": "api",
+				"created_at": "2026-11-13T19:41:00.000Z"
+			}
+		},
+		"contact.unstopped": {
+			"id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+			"object": "event",
+			"type": "contact.unstopped",
+			"api_version": "2026-11-13",
+			"timestamp": "2026-11-13T19:41:00.000Z",
+			"data": {
+				"id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "contact",
+				"handle": "+15555550123",
+				"kind": "phone",
+				"first_name": "Maria",
+				"last_name": "Alvarez",
+				"company": null,
+				"tags": [
+					"buyer"
+				],
+				"custom_fields": {},
+				"stopped": false,
+				"stopped_at": null,
+				"stop_source": null,
+				"last_service": "imessage",
+				"first_message_at": "2026-11-13T19:41:00.000Z",
+				"last_message_at": "2026-11-13T19:41:00.000Z",
+				"created_via": "api",
+				"created_at": "2026-11-13T19:41:00.000Z"
+			}
+		},
+		"sequence.completed": {
+			"id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+			"object": "event",
+			"type": "sequence.completed",
+			"api_version": "2026-11-13",
+			"timestamp": "2026-11-13T19:41:00.000Z",
+			"data": {
+				"id": "enr_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "enrollment",
+				"sequence_id": "seq_1Hq2LxW9cVbN3mKpRtYs0a",
+				"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"handle": "+15555550123",
+				"contact": {
+					"id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+					"object": "contact",
+					"handle": "+15555550123",
+					"kind": "phone",
+					"first_name": "Maria",
+					"last_name": "Alvarez",
+					"company": null,
+					"tags": [
+						"buyer"
+					],
+					"custom_fields": {},
+					"stopped": false,
+					"stopped_at": null,
+					"stop_source": null,
+					"last_service": "imessage",
+					"first_message_at": "2026-11-13T19:41:00.000Z",
+					"last_message_at": "2026-11-13T19:41:00.000Z",
+					"created_via": "api",
+					"created_at": "2026-11-13T19:41:00.000Z"
+				},
+				"state": "stopped",
+				"stop_reason": "replied",
+				"completed_at": "2026-11-13T19:41:00.000Z"
+			}
+		},
+		"broadcast.completed": {
+			"id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+			"object": "event",
+			"type": "broadcast.completed",
+			"api_version": "2026-11-13",
+			"timestamp": "2026-11-13T19:41:00.000Z",
+			"data": {
+				"id": "bc_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "broadcast",
+				"name": "Open house Saturday",
+				"state": "completed",
+				"recipient_count": 42,
+				"counts": {
+					"sent": 12,
+					"delivered": 27,
+					"failed": 1,
+					"skipped": 2
+				},
+				"completed_at": "2026-11-13T19:41:00.000Z"
+			}
+		},
+		"automation.matched": {
+			"id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+			"object": "event",
+			"type": "automation.matched",
+			"api_version": "2026-11-13",
+			"timestamp": "2026-11-13T19:41:00.000Z",
+			"data": {
+				"object": "automation_match",
+				"rule_id": "kw_1Hq2LxW9cVbN3mKpRtYs0a",
+				"rule_name": "Pricing",
+				"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+				"actions": [
+					"reply",
+					"tag",
+					"webhook"
+				],
+				"message": {
+					"id": "msg_2Bf8QzD4kJmA6nXwEuTr1c",
+					"object": "message",
+					"direction": "in",
+					"state": "received",
+					"to": "+15555550100",
+					"from": "+15555550123",
+					"chat_id": null,
+					"contact_id": "ct_1Hq2LxW9cVbN3mKpRtYs0a",
+					"conversation_id": "conv_1Hq2LxW9cVbN3mKpRtYs0a",
+					"text": "PRICING",
+					"text_deleted": false,
+					"files": [],
+					"service_requested": "auto",
+					"service": "imessage",
+					"sms_retry": false,
+					"source": "mac",
+					"source_ref": null,
+					"metadata": {},
+					"hold": null,
+					"send_at": null,
+					"expires_at": null,
+					"failure": null,
+					"cancel_reason": null,
+					"resolution": null,
+					"resolved_at": null,
+					"resent_message_id": null,
+					"reply_to_id": null,
+					"reactions": [],
+					"edited_at": null,
+					"unsent_at": null,
+					"created_at": "2026-11-13T19:44:12.000Z",
+					"queued_at": null,
+					"sending_at": null,
+					"sent_at": null,
+					"delivered_at": null,
+					"read_at": null,
+					"failed_at": null,
+					"unconfirmed_at": null,
+					"expired_at": null,
+					"canceled_at": null,
+					"received_at": "2026-11-13T19:44:10.000Z"
+				},
+				"matched_at": "2026-11-13T19:41:00.000Z"
+			}
+		},
+		"device.online": {
+			"id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+			"object": "event",
+			"type": "device.online",
+			"api_version": "2026-11-13",
+			"timestamp": "2026-11-13T19:41:00.000Z",
+			"data": {
+				"id": "dev_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "device",
+				"status": "online",
+				"name": "Dana’s MacBook Air",
+				"number": "+15555550100",
+				"app_version": "1.0.0",
+				"macos_version": "15.1",
+				"last_seen_at": "2026-11-13T19:41:00.000Z",
+				"last_sync_at": "2026-11-13T19:41:00.000Z",
+				"offline_since": null,
+				"paired_at": "2026-11-01T15:00:00.000Z",
+				"checks": {
+					"messages": {
+						"state": "ok",
+						"detail": null
+					},
+					"full_disk_access": {
+						"state": "ok",
+						"detail": null
+					},
+					"forwarding": {
+						"state": "ok",
+						"detail": null
+					},
+					"awake": {
+						"state": "ok",
+						"detail": null
+					},
+					"filevault": {
+						"state": "ok",
+						"detail": null
+					}
+				},
+				"checks_ok": true,
+				"transcription": false,
+				"held_count": 0,
+				"queued_count": 0,
+				"unconfirmed_count": 0,
+				"paused_until": null,
+				"today": {
+					"sent": 14,
+					"new_people": 3,
+					"new_people_limit": 50,
+					"daily_limit": 1000,
+					"resets_at": "2026-11-14T05:00:00.000Z"
+				},
+				"failed_checks": []
+			}
+		},
+		"device.offline": {
+			"id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+			"object": "event",
+			"type": "device.offline",
+			"api_version": "2026-11-13",
+			"timestamp": "2026-11-13T19:41:00.000Z",
+			"data": {
+				"id": "dev_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "device",
+				"status": "offline",
+				"name": "Dana’s MacBook Air",
+				"number": "+15555550100",
+				"app_version": "1.0.0",
+				"macos_version": "15.1",
+				"last_seen_at": "2026-11-13T19:41:00.000Z",
+				"last_sync_at": "2026-11-13T19:41:00.000Z",
+				"offline_since": "2026-11-13T19:39:00.000Z",
+				"paired_at": "2026-11-01T15:00:00.000Z",
+				"checks": {
+					"messages": {
+						"state": "ok",
+						"detail": null
+					},
+					"full_disk_access": {
+						"state": "ok",
+						"detail": null
+					},
+					"forwarding": {
+						"state": "ok",
+						"detail": null
+					},
+					"awake": {
+						"state": "ok",
+						"detail": null
+					},
+					"filevault": {
+						"state": "ok",
+						"detail": null
+					}
+				},
+				"checks_ok": true,
+				"transcription": false,
+				"held_count": 2,
+				"queued_count": 2,
+				"unconfirmed_count": 0,
+				"paused_until": null,
+				"today": {
+					"sent": 14,
+					"new_people": 3,
+					"new_people_limit": 50,
+					"daily_limit": 1000,
+					"resets_at": "2026-11-14T05:00:00.000Z"
+				},
+				"failed_checks": []
+			}
+		},
+		"device.check_failed": {
+			"id": "evt_1Hq2LxW9cVbN3mKpRtYs0a",
+			"object": "event",
+			"type": "device.check_failed",
+			"api_version": "2026-11-13",
+			"timestamp": "2026-11-13T19:41:00.000Z",
+			"data": {
+				"id": "dev_1Hq2LxW9cVbN3mKpRtYs0a",
+				"object": "device",
+				"status": "online",
+				"name": "Dana’s MacBook Air",
+				"number": "+15555550100",
+				"app_version": "1.0.0",
+				"macos_version": "15.1",
+				"last_seen_at": "2026-11-13T19:41:00.000Z",
+				"last_sync_at": "2026-11-13T19:41:00.000Z",
+				"offline_since": null,
+				"paired_at": "2026-11-01T15:00:00.000Z",
+				"checks": {
+					"messages": {
+						"state": "needs_you",
+						"detail": "Messages isn’t signed in to iMessage."
+					},
+					"full_disk_access": {
+						"state": "ok",
+						"detail": null
+					},
+					"forwarding": {
+						"state": "ok",
+						"detail": null
+					},
+					"awake": {
+						"state": "ok",
+						"detail": null
+					},
+					"filevault": {
+						"state": "ok",
+						"detail": null
+					}
+				},
+				"checks_ok": false,
+				"transcription": false,
+				"held_count": 0,
+				"queued_count": 0,
+				"unconfirmed_count": 0,
+				"paused_until": null,
+				"today": {
+					"sent": 14,
+					"new_people": 3,
+					"new_people_limit": 50,
+					"daily_limit": 1000,
+					"resets_at": "2026-11-14T05:00:00.000Z"
+				},
+				"failed_checks": [
+					"messages"
+				]
+			}
+		}
+	},
+	"errors": {
+		"invalid_request": {
+			"status": 400,
+			"hint": "Check the fields named in the message and send it again.",
+			"doc_url": "https://usebluebot.com/docs/errors/invalid_request"
+		},
+		"unauthorized": {
+			"status": 401,
+			"hint": "Send a valid key as `Authorization: Bearer <key>`.",
+			"doc_url": "https://usebluebot.com/docs/errors/unauthorized"
+		},
+		"plan_lapsed": {
+			"status": 402,
+			"hint": "Update the card on the Billing page; texts wait until the plan is active.",
+			"doc_url": "https://usebluebot.com/docs/errors/plan_lapsed"
+		},
+		"forbidden": {
+			"status": 403,
+			"hint": "This key or sign-in may not do that.",
+			"doc_url": "https://usebluebot.com/docs/errors/forbidden"
+		},
+		"insufficient_scope": {
+			"status": 403,
+			"hint": "Make a key with the scope named in the message.",
+			"doc_url": "https://usebluebot.com/docs/errors/insufficient_scope"
+		},
+		"account_held": {
+			"status": 403,
+			"hint": "BlueBot paused this account's sending. Write to support@usebluebot.com.",
+			"doc_url": "https://usebluebot.com/docs/errors/account_held"
+		},
+		"not_found": {
+			"status": 404,
+			"hint": "Check the id. Ids are prefixed by kind, such as `msg_` for a message.",
+			"doc_url": "https://usebluebot.com/docs/errors/not_found"
+		},
+		"conflict": {
+			"status": 409,
+			"hint": "Read the current state and try again.",
+			"doc_url": "https://usebluebot.com/docs/errors/conflict"
+		},
+		"idempotency_conflict": {
+			"status": 409,
+			"hint": "This Idempotency-Key was used in the last 24 hours with a different request. Use a new key for a new request.",
+			"doc_url": "https://usebluebot.com/docs/errors/idempotency_conflict"
+		},
+		"limit_reached": {
+			"status": 409,
+			"hint": "You have reached a limit on your account. The docs list each limit.",
+			"doc_url": "https://usebluebot.com/docs/errors/limit_reached"
+		},
+		"payload_too_large": {
+			"status": 413,
+			"hint": "Send less. The docs list each size limit.",
+			"doc_url": "https://usebluebot.com/docs/errors/payload_too_large"
+		},
+		"unsupported_media_type": {
+			"status": 415,
+			"hint": "Send `Content-Type: application/json`.",
+			"doc_url": "https://usebluebot.com/docs/errors/unsupported_media_type"
+		},
+		"rate_limited": {
+			"status": 429,
+			"hint": "Wait the number of seconds in `retry_after`, then try again.",
+			"doc_url": "https://usebluebot.com/docs/errors/rate_limited"
+		},
+		"internal": {
+			"status": 500,
+			"hint": "Try again. If it keeps happening, write to support with the request_id.",
+			"doc_url": "https://usebluebot.com/docs/errors/internal"
+		},
+		"upstream_failed": {
+			"status": 502,
+			"hint": "A service BlueBot depends on failed. Try again shortly.",
+			"doc_url": "https://usebluebot.com/docs/errors/upstream_failed"
+		},
+		"unavailable": {
+			"status": 503,
+			"hint": "BlueBot is not taking requests right now. Try again shortly.",
+			"doc_url": "https://usebluebot.com/docs/errors/unavailable"
+		}
+	}
+}

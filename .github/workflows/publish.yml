@@ -1,0 +1,42 @@
+# Publishes n8n-nodes-bluebot to npm when a version tag (such as 0.1.0) is pushed. n8n verifies only community nodes
+# published from GitHub Actions with an npm provenance statement, which this does.
+#
+# npm sign-in: the first publish uses a granular access token saved as the NPM_TOKEN secret, since npm sets up trusted
+# publishing only on a package that already exists. After it, add this workflow as the package's trusted publisher on
+# npmjs.com (Settings → Trusted Publisher → GitHub Actions, workflow publish.yml) and delete the secret; the step below
+# then signs in with GitHub's OIDC token instead.
+name: Publish
+
+on:
+  push:
+    tags: ['*.*.*']
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      # No registry-url: setup-node would write a placeholder token that stops npm from trying OIDC.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: The tag names the package's version
+        run: test "$GITHUB_REF_NAME" = "$(node -p "require('./package.json').version")"
+
+      - run: npm run typecheck
+
+      # prepublishOnly builds, lints and tests first.
+      - name: Publish with provenance
+        run: |
+          if [ -n "$NPM_TOKEN" ]; then npm config set //registry.npmjs.org/:_authToken "$NPM_TOKEN"; fi
+          npm publish --provenance --access public
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

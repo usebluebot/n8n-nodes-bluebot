@@ -1,0 +1,61 @@
+{
+    "name": "n8n-nodes-bluebot",
+    "version": "0.1.0",
+    "description": "n8n nodes for BlueBot: send texts from your own number through the Messages app on your Mac, and start workflows when texts come in.",
+    "keywords": [
+        "n8n-community-node-package",
+        "n8n",
+        "bluebot",
+        "imessage",
+        "sms",
+        "texting"
+    ],
+    "license": "MIT",
+    "homepage": "https://usebluebot.com/docs/n8n",
+    "author": {
+        "name": "BlueBot",
+        "email": "team@usebluebot.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/usebluebot/n8n-nodes-bluebot.git"
+    },
+    "engines": {
+        "node": ">=18.17"
+    },
+    "main": "index.js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "node scripts/clean.mjs && tsc -p tsconfig.json && node scripts/copy-assets.mjs",
+        "generate": "node scripts/generate.mjs",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "test": "vitest run",
+        "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.test.json --noEmit",
+        "prepublishOnly": "npm run build && npm run lint && npm test"
+    },
+    "n8n": {
+        "n8nNodesApiVersion": 1,
+        "strict": true,
+        "credentials": [
+            "dist/credentials/BlueBotApi.credentials.js"
+        ],
+        "nodes": [
+            "dist/nodes/BlueBot/BlueBot.node.js",
+            "dist/nodes/BlueBotTrigger/BlueBotTrigger.node.js"
+        ]
+    },
+    "peerDependencies": {
+        "n8n-workflow": "*"
+    },
+    "devDependencies": {
+        "@n8n/node-cli": "0.56.4",
+        "@types/node": "22.20.5",
+        "eslint": "9.29.0",
+        "n8n-workflow": "2.16.0",
+        "typescript": "5.9.3",
+        "vitest": "5.1.0"
+    }
+}

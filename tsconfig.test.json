@@ -1,0 +1,12 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"noEmit": true,
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"target": "es2022",
+		"lib": ["es2022"],
+		"noUnusedLocals": false
+	},
+	"include": ["credentials/**/*.ts", "nodes/**/*.ts", "test/**/*.ts", "vitest.config.mts"]
+}
